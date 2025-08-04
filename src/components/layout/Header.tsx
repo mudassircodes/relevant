@@ -65,7 +65,7 @@ export function Header() {
                     target={button.external ? "_blank" : undefined}
                     rel={button.external ? "noopener noreferrer" : undefined}
                     onClick={() => setIsMenuOpen(false)}
-                    className="text-blue-400 border-[1.5px] border-blue-400 bg-transparent p-2  rounded-[120px] cursor-pointer transition-all duration-200 ease text-sm hover:bg-blue-400 hover:text-white hover:border-blue-400"
+                    className="text-blue-400 border-[1.5px] border-blue-400 bg-transparent px-3 py-2  rounded-[120px] cursor-pointer transition-all duration-200 ease text-sm hover:bg-blue-400 hover:text-white hover:border-blue-400"
                   >
                     {button.title}
                   </Link>
