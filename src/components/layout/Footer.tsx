@@ -9,7 +9,7 @@ export function Footer() {
         {/* Logo - Centered */}
         <div className="footer_logo hidden lg:block">
           <Link 
-            href="/" 
+            href="#home" 
             className="flex items-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black rounded-lg p-1"
             aria-label="Go to homepage"
             tabIndex={0}
@@ -32,7 +32,7 @@ export function Footer() {
             {/* Mobile Logo */}
             <div className="footer_logo">
               <Link 
-                href="/" 
+                href="#home" 
                 className="flex items-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black rounded-lg p-1"
                 aria-label="Go to homepage"
                 tabIndex={0}
@@ -50,8 +50,7 @@ export function Footer() {
             
             {/* Mobile Button */}
             <Link 
-              href="https://t.me/relevants_bot?start=Site1"
-              target="_blank"
+              href="#home"
               rel="noopener noreferrer"
               className="text-blue-400 border border-blue-400 px-2 sm:px-4 py-1.5 sm:py-2 rounded-full hover:bg-blue-400 hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black text-xs sm:text-sm"
               aria-label="Join as a specialist on Telegram"
@@ -69,7 +68,6 @@ export function Footer() {
                   <Link 
                     href={link.href}
                     download={link.download}
-                    target={link.external ? "_blank" : undefined}
                     rel={link.external ? "noopener noreferrer" : undefined}
                     className="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black rounded px-1 py-0.5 block w-full"
                     aria-label={`${link.title}${link.download ? ' - Download document' : ''}`}
@@ -93,7 +91,6 @@ export function Footer() {
                 <Link 
                   href={link.href}
                   download={link.download}
-                  target={link.external ? "_blank" : undefined}
                   rel={link.external ? "noopener noreferrer" : undefined}
                   className={`${
                     link.special 

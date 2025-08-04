@@ -204,12 +204,11 @@ export function HeroSection() {
 
           {/* Call to Action Button */}
           <div className="text-center">
-            <Link
-              href="#"
+            <button
               className="inline-block bg-[#007BFF] text-white px-4 py-2  rounded-full font-semibold text-xs  hover:bg-[#0056b3] transition-colors duration-200 shadow-md hover:shadow-lg"
             >
               Подобрать исполнителя → 30 секунд
-            </Link>
+            </button>
           </div>
         </div>
       </div>

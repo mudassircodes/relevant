@@ -14,35 +14,35 @@ export const siteConfig: SiteConfig = {
 export const navItems: NavItem[] = [
   {
     title: "Relevants в цифрах",
-    href: "/",
+    href: "#home",
   },
   {
     title: "Инструкция",
-    href: "/",
+    href: "#home",
   },
   {
     title: "Преимущества",
-    href: "/",
+    href: "#home",
   },
   {
     title: "Отзывы",
-    href: "/",
+    href: "#home",
   },
   {
     title: "Вопросы и ответы",
-    href: "/",
+    href: "#home",
   },
 ]
 
 export const actionButtons: ActionButton[] = [
   {
     title: "Я нанимаю",
-    href: "/",
+    href: "#home",
     external: true,
   },
   {
     title: "Я ищу проект",
-    href: "/",
+    href: "#home",
     external: true,
   },
 ]
@@ -50,22 +50,22 @@ export const actionButtons: ActionButton[] = [
 export const footerLinks: FooterLink[] = [
   {
     title: "Условия использования Relevants",
-    href: "/",
+    href: "#home",
     external: true,
   },
   {
     title: "Политика обработки данных",
-    href: "/",
+    href: "#home",
     external: true,
   },
   {
     title: "Связаться с нами",
-    href: "/",
+    href: "#home",
     external: true,
   },
   {
     title: "Я исполнитель",
-    href: "/",
+    href: "#home",
     external: true,
     special: true,
   },

@@ -10,7 +10,7 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="w-full px-4 md:px-14 bg-[#ddf1ff] overflow-hidden rounded-b-[60px] min-h-screen relative z-10">
+    <header id="home" className="w-full px-4 md:px-14 bg-[#ddf1ff] overflow-hidden rounded-b-[60px] min-h-screen relative z-10">
       <div className="header_area_wrapper w-full mx-auto  pt-6 ">
 
         
@@ -18,7 +18,7 @@ export function Header() {
         <div className="navbar w-full transition-all duration-800 ease-out bg-transparent lg:bg-white rounded-[100px] shadow-none lg:shadow-[2px_5px_34px_0px_#7695aa61]">
           <div className="navbar_area_wrapper mx-auto w-full p-3 rounded-[100px] flex justify-between items-center bg-transparent lg:bg-white shadow-none lg:shadow-[2px_5px_34px_0px_#7695aa61]">
             <div className="logo">
-              <Link href="#" className="h-[50px] sm:h-[50px] lg:h-[54px] flex items-center">
+              <Link href="#home" className="h-[50px] sm:h-[50px] lg:h-[54px] flex items-center">
                 <Image
                   src="/relevants-logo.png"
                   alt="Relevants"
@@ -30,7 +30,7 @@ export function Header() {
             </div>
 
             <div
-              id="nav_items"
+              id=""
               className={`w-full flex justify-between items-center ${
                 isMenuOpen ? 'fixed inset-0 z-50 bg-black/80 backdrop-blur-sm lg:static lg:bg-transparent lg:flex' : 'hidden lg:flex'
               }`}
@@ -62,7 +62,6 @@ export function Header() {
                   <Link
                     key={button.title}
                     href={button.href}
-                    target={button.external ? "_blank" : undefined}
                     rel={button.external ? "noopener noreferrer" : undefined}
                     onClick={() => setIsMenuOpen(false)}
                     className="text-blue-400 border-[1.5px] border-blue-400 bg-transparent px-3 py-2  rounded-[120px] cursor-pointer transition-all duration-200 ease text-sm hover:bg-blue-400 hover:text-white hover:border-blue-400"
@@ -161,18 +160,16 @@ export function Header() {
                 <div className="hero_bottom_meta flex flex-col justify-start items-start gap-4 sm:gap-6 lg:gap-8">
                   {/* Action buttons */}
                   <div className="hidden lg:flex flex-col md:flex-row gap-5">
-                    <Link
+                    <button
                       className="text-white bg-blue-600 w-full sm:w-auto px-6 py-3 rounded-full cursor-pointer transition-all duration-200 ease font-raleway text-sm sm:text-base font-semibold leading-6 text-center hover:bg-blue-700 flex items-center justify-center"
-                      href="#"
                     >
                       Разместить задачу
-                    </Link>
-                    <Link
+                    </button>
+                    <button
                       className="text-blue-600 border border-blue-600 bg-blue-50 w-full sm:w-auto px-6 py-3 rounded-full cursor-pointer transition-all duration-200 ease font-raleway text-sm sm:text-base font-semibold leading-6 text-center hover:bg-blue-100 flex items-center justify-center"
-                      href="#"
                     >
                       Найти исполнителя
-                    </Link>
+                    </button>
                   </div>
                 </div>
               </div>
