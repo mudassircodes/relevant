@@ -94,7 +94,7 @@ export function Footer() {
                   rel={link.external ? "noopener noreferrer" : undefined}
                   className={`${
                     link.special 
-                      ? "text-blue-400 border border-blue-400 px-4 py-2 rounded-full hover:bg-blue-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black"
+                      ? "border border-white-400 px-4 py-2 rounded-full text-white focus:outline-none focus:ring-2 focus:ring-offset-2"
                       : "text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black rounded px-1 py-0.5"
                   }`}
                   aria-label={`${link.title}${link.download ? ' - Download document' : ''}`}
