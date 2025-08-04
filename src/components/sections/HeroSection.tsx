@@ -63,7 +63,7 @@ const mobileAvatarData = [
     bgColor: "#E8F4FD",
   },
 ];
-
+   
 export function HeroSection() {
   return (
     <section className="w-full bg-white py-16 sm:py-12 lg:py-16  lg:pt-32 relative z-0">
