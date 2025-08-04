@@ -66,7 +66,7 @@ const mobileAvatarData = [
    
 export function HeroSection() {
   return (
-    <section className="w-full bg-white py-16 sm:py-12 lg:py-16  lg:pt-32 relative z-0">
+    <section className="w-full bg-white py-16 sm:py-12  lg:py-32 relative z-0">
       <div className="  mx-auto px-7 lg:px-8">
         <div className="text-left  sm:text-center">
           {/* Main Heading */}
@@ -114,10 +114,10 @@ export function HeroSection() {
                 {mobileAvatarData.map((avatar, index) => (
                   <div
                     key={`mobile-${index}`}
-                    className="flex flex-col items-center p-1 xs:p-1 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#F9F9FA] mobile-no-transform"
+                    className="flex flex-col items-center gap-5 p-1 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#F9F9FA] mobile-no-transform"
                   >
                     <div
-                      className="w-40 h-30 xs:w-24 xs:h-24 mb-2 rounded-lg p-3 xs:p-4"
+                      className="w-30 h-30 xs:w-24 xs:h-24 mb-2 rounded-lg p-3 xs:p-4"
                       style={{ backgroundColor: avatar.bgColor }}
                     >
                       <Image
