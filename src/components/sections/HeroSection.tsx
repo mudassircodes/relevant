@@ -123,8 +123,10 @@ export function HeroSection() {
                       <Image
                         src={avatar.image}
                         alt={avatar.name}
-                        width={64}
-                        height={64}
+                        width={200}
+
+                        quality={100}
+                        height={200}
                         className="w-full h-full object-contain"
                       />
                     </div>
@@ -183,6 +185,7 @@ export function HeroSection() {
                         alt={avatar.name}
                         width={50}
                         height={50}
+                        quality={100}
                         className="w-full h-full object-contain"
                       />
                     </div>

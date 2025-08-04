@@ -10,7 +10,7 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header id="home" className="w-full px-4 md:px-14 bg-[#ddf1ff] overflow-hidden rounded-b-[60px] min-h-screen relative z-10">
+    <header id="home" className="w-full px-4 md:px-14 bg-[#ddf1ff] overflow-hidden rounded-b-[60px] -h-screen relative z-10">
       <div className="header_area_wrapper w-full mx-auto  pt-6 ">
 
         
