@@ -52,7 +52,7 @@ export function Footer() {
             <Link 
               href="#home"
               rel="noopener noreferrer"
-              className="text-blue-400 border border-blue-400 px-2 sm:px-4 py-1.5 sm:py-2 rounded-full hover:bg-blue-400 hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black text-xs sm:text-sm"
+              className="text-white border border-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-full transition-all duration-200  text-xs sm:text-sm"
               aria-label="Join as a specialist on Telegram"
               tabIndex={0}
             >
