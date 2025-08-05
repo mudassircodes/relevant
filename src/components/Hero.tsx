@@ -55,7 +55,7 @@ export const Hero = () => {
           priority
         />
 
-        <div className="block lg:hidden mt-6 flex-col gap-4">
+        <div className="flex lg:hidden mt-6 px-10 justify-center flex-col gap-4">
           <Link
             href="#"
             className="text-white bg-blue-600 py-3 px-6 rounded-full text-sm font-semibold hover:bg-blue-700 text-center"

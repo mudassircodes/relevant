@@ -114,20 +114,20 @@ export function HeroSection() {
                 {mobileAvatarData.map((avatar, index) => (
                   <div
                     key={`mobile-${index}`}
-                    className="flex flex-col items-center gap-5 p-1 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#F9F9FA] mobile-no-transform"
+                    className="flex flex-col p-3 items-center gap-5 ounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#F9F9FA] mobile-no-transform"
                   >
                     <div
-                      className="w-30 h-30 xs:w-24 xs:h-24 mb-2 rounded-lg p-3 xs:p-4"
+                      className="mb-2 rounded-lg p-3"
                       style={{ backgroundColor: avatar.bgColor }}
                     >
                       <Image
                         src={avatar.image}
                         alt={avatar.name}
-                        width={200}
+                        width={120}
 
                         quality={100}
-                        height={200}
-                        className="w-full h-full object-contain"
+                        height={100}
+                        className="w-30 h-30 object-contain"
                       />
                     </div>
                     <div className="text-center">
@@ -177,16 +177,16 @@ export function HeroSection() {
                   >
                     {/* w-20 h-28 xs:w-24 xs:h-32 sm:w-20 sm:h-28 md:w-24 md:h-32 */}
                     <div
-                      className="w-60 lg:w-48 lg:h-54 mb-2 sm:mb-3 rounded-lg p-2 xs:p-3 sm:p-4 lg:p-6 "
+                      className="mb-2 sm:mb-3 rounded-lg p-2 xs:p-3 sm:p-4 lg:p-6 "
                       style={{ backgroundColor: avatar.bgColor }}
                     >
                       <Image
                         src={avatar.image}
                         alt={avatar.name}
-                        width={50}
-                        height={50}
+                        width={100}
+                        height={100}
                         quality={100}
-                        className="w-full h-full object-cover"
+                        className="object-contain xl:w-32 xl:h-50 2xl:w-48 2xl:h-48 "
                       />
                     </div>
                     <div className="text-center ">
