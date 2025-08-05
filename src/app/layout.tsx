@@ -83,7 +83,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-background font-sans`}>
-        <div className="relative flex min-h-screen flex-col">
+        <div className="relative flex flex-col">
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />

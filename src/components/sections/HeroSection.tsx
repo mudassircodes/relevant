@@ -66,16 +66,16 @@ const mobileAvatarData = [
    
 export function HeroSection() {
   return (
-    <section className="w-full bg-white py-16 sm:py-12  lg:py-32 relative z-0">
-      <div className="  mx-auto px-7 lg:px-8">
-        <div className="text-left  sm:text-center">
+    <section className="w-full xl:max-w-[1600px] mx-auto bg-white py-16 sm:py-12 lg:py-32  z-0">
+      <div className="  mx-auto px-7">
+        <div className="text-left sm:text-center">
           {/* Main Heading */}
-          <h1 className="text-lg xs:text-xl sm:text-2xl md:text-3xl lg:text-[36px] font-bold text-[#333333] leading-tight mb-3 xs:mb-4 sm:mb-6 max-w-xs xs:max-w-sm sm:max-w-lg lg:max-w-xl sm:mx-auto">
+          <h1 className="text-[32px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#333333] leading-tight mb-3 xs:mb-4 sm:mb-6 max-w-xs xs:max-w-sm sm:max-w-lg lg:max-w-xl sm:mx-auto">
             Мы помогаем собирать команды по всему миру
           </h1>
 
           {/* Subheading */}
-          <div className="text-xs xs:text-sm sm:text-base lg:text-[18px] text-[#666666] leading-relaxed max-w-xs xs:max-w-sm sm:max-w-lg lg:max-w-xl sm:mx-auto mb-6 xs:mb-8 sm:mb-12 text-left sm:text-center">
+          <div className="text-[16px] md:text-[18px] text-[#666666] leading-relaxed max-w-xs xs:max-w-sm sm:max-w-lg lg:max-w-xl sm:mx-auto mb-6 xs:mb-8 sm:mb-12 text-left sm:text-center">
             <p className="mb-2 xs:mb-3 sm:mb-4">
               С Relevants вы быстрее запускаете проекты — за счёт точного
               AI-подбора фрилансеров и сотрудников под ваши задачи.
@@ -100,7 +100,7 @@ export function HeroSection() {
           {/* Avatar Cards */}
           <div className="flex justify-center items-center mb-4 xs:mb-6 sm:mb-8 relative">
             {/* "с нами работают" text positioned on top of last 2 cards - desktop only */}
-            <div className="absolute top-0 z-10 hidden sm:block sm:right-[160px] md:right-[140px] lg:right-[120px] xl:right-[100px]">
+            <div className="absolute right-60 top-0 z-10 hidden sm:block  ">
               <p className="text-lg sm:text-xl lg:text-2xl font-caveat font-bold text-[#333333] transform rotate-12 origin-bottom-right">
                 с нами{" "}
                 <span className="underline decoration-2 underline-offset-4">
@@ -144,7 +144,7 @@ export function HeroSection() {
                 {avatarData.map((avatar, index) => (
                   <div
                     key={`desktop-${index}`}
-                    className="flex flex-col items-center p-1 xs:p-1 sm:p-2 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#F9F9FA]"
+                    className="flex flex-col justify-between items-center p-1 xs:p-1 sm:p-2 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#F9F9FA]"
                     style={{
                       transform: `translateY(${
                         Math.abs(index - 2) * 32 +
@@ -177,7 +177,7 @@ export function HeroSection() {
                   >
                     {/* w-20 h-28 xs:w-24 xs:h-32 sm:w-20 sm:h-28 md:w-24 md:h-32 */}
                     <div
-                      className="w-60 lg:w-32 lg:h-50 xl:w-32 xl:h-50 2xl:w-36 2xl:h-44 mb-2 sm:mb-3 rounded-lg p-2 xs:p-3 sm:p-4 lg:p-6"
+                      className="w-60 lg:w-48 lg:h-54 mb-2 sm:mb-3 rounded-lg p-2 xs:p-3 sm:p-4 lg:p-6 "
                       style={{ backgroundColor: avatar.bgColor }}
                     >
                       <Image
@@ -186,10 +186,10 @@ export function HeroSection() {
                         width={50}
                         height={50}
                         quality={100}
-                        className="w-full h-full object-contain"
+                        className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="text-center">
+                    <div className="text-center ">
                       <p className="text-xs xs:text-xs sm:text-sm md:text-base font-caveat font-bold text-[#000000]">
                         {avatar.name}
                       </p>
