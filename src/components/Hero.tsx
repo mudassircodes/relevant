@@ -6,9 +6,9 @@ export const Hero = () => {
   return (
     <main className="dark:bg-white" >
 
-    <section className="bg-[#ddf1ff]  rounded-b-[60px] " >
+    <section className="bg-[#ddf1ff] rounded-b-[60px] " >
 
-    <div className="flex flex-col lg:flex-row justify-between items-center w-full xl:max-w-[1600px] mx-auto md:px-14 lg:px-30 overflow-hidden rounded-b-[60px] py-32 gap-12 px-4">
+    <div className="flex flex-col lg:flex-row justify-between items-center w-full xl:max-w-[1600px] mx-auto md:px-14 lg:px-30 overflow-hidden rounded-b-[60px] pt-32 py-10 gap-12 px-4">
       {/* Left */}
       <div className="max-w-xl w-full">
         <div className="flex flex-col gap-8">
@@ -57,7 +57,7 @@ export const Hero = () => {
           priority
         />
 
-        <div className="flex lg:hidden mt-6 px-10 justify-center flex-col gap-4">
+        <div className="flex lg:hidden mt-10 px-10 justify-center flex-col gap-4">
           <Link
             href="#"
             className="text-white bg-blue-600 py-3 px-6 rounded-full text-sm font-semibold hover:bg-blue-700 text-center"
