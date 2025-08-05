@@ -63,28 +63,30 @@ const mobileAvatarData = [
     bgColor: "#E8F4FD",
   },
 ];
-   
+
 export function HeroSection() {
   return (
     <section className="w-full xl:max-w-[1600px] mx-auto bg-white py-16 sm:py-12 lg:py-32  z-0">
       <div className="  mx-auto px-7">
         <div className="text-left sm:text-center">
           {/* Main Heading */}
-          <h1 className="text-[32px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#333333] leading-tight mb-3 xs:mb-4 sm:mb-6 max-w-xs xs:max-w-sm sm:max-w-lg lg:max-w-xl sm:mx-auto">
-            Мы помогаем собирать команды по всему миру
-          </h1>
+          <div className=" lg:max-w-2xl pb-10 w-full mx-auto ">
+            <h1 className="text-[32px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#333333] leading-tight mb-3 xs:mb-4 sm:mb-6 sm:mx-auto">
+              Мы помогаем собирать команды по всему миру
+            </h1>
 
-          {/* Subheading */}
-          <div className="text-[16px] md:text-[18px] text-[#666666] leading-relaxed max-w-xs xs:max-w-sm sm:max-w-lg lg:max-w-xl sm:mx-auto mb-6 xs:mb-8 sm:mb-12 text-left sm:text-center">
-            <p className="mb-2 xs:mb-3 sm:mb-4">
-              С Relevants вы быстрее запускаете проекты — за счёт точного
-              AI-подбора фрилансеров и сотрудников под ваши задачи.
-            </p>
-            <p className="mb-2 xs:mb-3 sm:mb-4">
-              Поиск — как в TikTok: листаете подборку анкет и выбираете тех, кто
-              вам подходит. При взаимном мэтче контакты приходят в Telegram —
-              быстро, удобно, без лишних действий.
-            </p>
+            {/* Subheading */}
+            <div className="text-[16px] md:text-[18px] text-[#666666] leading-relaxed sm:mx-auto mb-6 xs:mb-8 sm:mb-12 text-left sm:text-center">
+              <p className="mb-2 xs:mb-3 sm:mb-4">
+                С Relevants вы быстрее запускаете проекты — за счёт точного
+                AI-подбора фрилансеров и сотрудников под ваши задачи.
+              </p>
+              <p className="mb-2 xs:mb-3 sm:mb-4">
+                Поиск — как в TikTok: листаете подборку анкет и выбираете тех,
+                кто вам подходит. При взаимном мэтче контакты приходят в
+                Telegram — быстро, удобно, без лишних действий.
+              </p>
+            </div>
           </div>
 
           {/* "с нами работают" text - mobile */}
@@ -124,7 +126,6 @@ export function HeroSection() {
                         src={avatar.image}
                         alt={avatar.name}
                         width={120}
-
                         quality={100}
                         height={100}
                         className="w-30 h-30 object-contain"
@@ -207,9 +208,7 @@ export function HeroSection() {
 
           {/* Call to Action Button */}
           <div className="text-center">
-            <button
-              className="inline-block bg-[#007BFF] text-white px-4 py-2  rounded-full font-semibold text-xs  hover:bg-[#0056b3] transition-colors duration-200 shadow-md hover:shadow-lg"
-            >
+            <button className="inline-block bg-[#007BFF] text-white px-4 py-2  rounded-full font-semibold text-md  hover:bg-[#0056b3] transition-colors duration-200 shadow-md hover:shadow-lg">
               Подобрать исполнителя → 30 секунд
             </button>
           </div>

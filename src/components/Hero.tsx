@@ -4,7 +4,9 @@ import React from "react";
 
 export const Hero = () => {
   return (
-    <section className="bg-[#ddf1ff]  " >
+    <main className="dark:bg-white" >
+
+    <section className="bg-[#ddf1ff]  rounded-b-[60px] " >
 
     <div className="flex flex-col lg:flex-row justify-between items-center w-full xl:max-w-[1600px] mx-auto md:px-14 lg:px-30 overflow-hidden rounded-b-[60px] py-32 gap-12 px-4">
       {/* Left */}
@@ -72,6 +74,8 @@ export const Hero = () => {
       </div>
     </div>
     </section>
+    </main>
+
 
   );
 };
