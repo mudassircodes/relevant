@@ -149,28 +149,36 @@ export function HeroSection() {
                     style={{
                       transform: `translateY(${
                         Math.abs(index - 2) * 32 +
-                        (index === 0 || index === 4 ? 16 : 0)
-                      }px) translateX(${
-                        (index - 2) * -28 +
                         (index === 0
-                          ? 4
+                          ? 50
                           : index === 1
                           ? -11
                           : index === 3
-                          ? 13
+                          ? -11
                           : index === 4
-                          ? -5
+                          ? 50
+                          : 0)
+                      }px) translateX(${
+                        (index - 2) * -28 +
+                        (index === 0
+                          ? 60
+                          : index === 1
+                          ? 10
+                          : index === 3
+                          ? -10
+                          : index === 4
+                          ? -60
                           : 0)
                       }px) rotate(${
                         (index - 2) * 8 +
                         (index === 0
-                          ? -6
+                          ? -3
                           : index === 1
-                          ? -8
+                          ? -4
                           : index === 3
-                          ? 8
+                          ? 4
                           : index === 4
-                          ? 10
+                          ? 3
                           : 0)
                       }deg)`,
                       zIndex: 5 - Math.abs(index - 2),
@@ -191,7 +199,7 @@ export function HeroSection() {
                       />
                     </div>
                     <div className="text-center ">
-                      <p className="text-xs xs:text-xs sm:text-sm md:text-base font-caveat font-bold text-[#000000]">
+                      <p className="lg:text-xl font-caveat font-bold text-[#000000]">
                         {avatar.name}
                       </p>
                     </div>

@@ -36,10 +36,10 @@ export const Hero = () => {
           </p>
 
           <div className="hidden lg:flex gap-5">
-            <button className="text-white bg-blue-600 px-6 py-3 rounded-full text-base font-semibold hover:bg-blue-700">
+            <button className="text-white bg-blue-600 px-6 py-3 rounded-full text-base lg:text-[18px] font-semibold hover:bg-blue-700">
               Разместить задачу
             </button>
-            <button className="text-blue-600 border border-blue-600 bg-blue-50 px-6 py-3 rounded-full text-base font-semibold hover:bg-blue-100">
+            <button className="text-blue-600 border border-blue-600 px-6 py-3 rounded-full text-base lg:text-[18px] font-semibold ">
               Найти исполнителя
             </button>
           </div>

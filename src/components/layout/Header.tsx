@@ -2,27 +2,37 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { X } from "lucide-react";
 import { navItems, actionButtons } from "@/lib/config";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 80);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <section className="fixed w-full z-50">
-      <header className="w-full max-w-[1600px] mx-auto px-4 md:px-14 lg:px-30 ">
-        <div className="mx-auto  pt-6">
+    <section className={`fixed w-full lg:bg-transparent ${scrolled ? 'bg-white' : 'bg-transparent'} z-50`}>
+      <header className={`w-full max-w-[1600px] mx-auto px-4 md:px-14 lg:px-30 transition-all duration-300 ${scrolled && "lg:px-44"} `}>
+        <div className="mx-auto pt-4 lg:pt-6">
           {/* Navbar */}
-          <div className="w-full transition-all bg-white shadow-xl rounded-full ">
-            <div className="w-full p-3 rounded-full flex justify-between items-center">
+          <div className={`w-full transition-all p-3  lg:bg-white lg:shadow-xl rounded-full`}>
+            <div className="w-full rounded-full flex justify-between items-center">
               {/* Logo */}
-              <Link href="#home" className="h-[50px] flex items-center">
+              <Link href="#home" className="flex max-w-md items-center">
                 <Image
                   src="/relevants-logo.png"
                   alt="Relevants"
-                  width={120}
-                  height={40}
+                  width={150}
+                  height={100}
                   priority
                 />
               </Link>
@@ -41,13 +51,13 @@ export function Header() {
                 </div>
 
                 {/* Desktop Nav Items */}
-                <ul className="hidden lg:flex mx-auto space-x-4">
+                <ul className="hidden lg:flex mx-auto space-x-4 max-w-xl  xl:space-x-9">
                   {navItems.map((item) => (
                     <li key={item.title}>
                       <Link
                         href={item.href}
                         onClick={() => setIsMenuOpen(false)}
-                        className="font-raleway text-sm font-semibold text-[#131318] hover:opacity-70"
+                        className="font-raleway text-xs xl:text-md font-semibold text-[#131318] hover:opacity-70"
                       >
                         {item.title}
                       </Link>
@@ -62,7 +72,7 @@ export function Header() {
                       key={button.title}
                       href={button.href}
                       rel={button.external ? "noopener noreferrer" : undefined}
-                      className="text-blue-400 border-[1.5px] border-blue-400 px-3 py-2 rounded-full text-sm hover:bg-blue-400 hover:text-white"
+                      className="text-blue-700 border-2  border-blue-500 px-3 py-2 rounded-full"
                     >
                       {button.title}
                     </Link>
