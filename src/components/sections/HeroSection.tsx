@@ -116,10 +116,10 @@ export function HeroSection() {
                 {mobileAvatarData.map((avatar, index) => (
                   <div
                     key={`mobile-${index}`}
-                    className="flex flex-col p-3 items-center gap-5 ounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#F9F9FA] mobile-no-transform"
+                    className="flex flex-col p-3 items-center gap-5 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#F9F9FA] mobile-no-transform"
                   >
                     <div
-                      className="mb-2 rounded-lg p-3"
+                      className="rounded-lg p-3"
                       style={{ backgroundColor: avatar.bgColor }}
                     >
                       <Image
