@@ -90,7 +90,7 @@ export function HeroSection() {
           </div>
 
           {/* "с нами работают" text - mobile */}
-          <div className="text-center mb-4 sm:hidden">
+          <div className="text-center mb-4 lg:hidden">
             <p className="text-lg font-caveat font-bold text-[#333333]">
               с нами{" "}
               <span className="underline decoration-2 underline-offset-4">
@@ -102,7 +102,7 @@ export function HeroSection() {
           {/* Avatar Cards */}
           <div className="flex justify-center items-center mb-4 xs:mb-6 sm:mb-8 relative">
             {/* "с нами работают" text positioned on top of last 2 cards - desktop only */}
-            <div className="absolute right-60 top-0 z-10 hidden sm:block  ">
+            <div className="absolute right-60 top-0 z-10 hidden lg:block  ">
               <p className="text-lg sm:text-xl lg:text-2xl font-caveat font-bold text-[#333333] transform rotate-12 origin-bottom-right">
                 с нами{" "}
                 <span className="underline decoration-2 underline-offset-4">
@@ -128,11 +128,11 @@ export function HeroSection() {
                         width={120}
                         quality={100}
                         height={100}
-                        className="w-30 h-30 object-contain"
+                        className="w-48 h-48 object-contain"
                       />
                     </div>
                     <div className="text-center">
-                      <p className="text-xs xs:text-xs font-caveat font-bold text-[#000000]">
+                      <p className="text-md font-caveat font-bold text-[#000000]">
                         {avatar.name}
                       </p>
                     </div>
@@ -195,7 +195,7 @@ export function HeroSection() {
                         width={100}
                         height={100}
                         quality={100}
-                        className="object-contain xl:w-32 xl:h-50 2xl:w-48 2xl:h-48 "
+                        className="object-contain w-48 h-48 "
                       />
                     </div>
                     <div className="text-center ">

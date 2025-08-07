@@ -21,7 +21,7 @@ export function Header() {
 
   return (
     <section className={`fixed w-full lg:bg-transparent ${scrolled ? 'bg-white' : 'bg-transparent'} z-50`}>
-      <header className={`w-full max-w-[1600px] mx-auto px-4 md:px-14 lg:px-30 transition-all duration-300 ${scrolled && "lg:px-44"} `}>
+      <header className={`w-full max-w-[1600px] mx-auto px-4 md:px-14 lg:px-30 transition-all duration-300`}>
         <div className="mx-auto pt-4 lg:pt-6">
           {/* Navbar */}
           <div className={`w-full transition-all p-3  lg:bg-white lg:shadow-xl rounded-full`}>
