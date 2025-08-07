@@ -12,7 +12,7 @@ export const Hero = () => {
       {/* Left */}
       <div className="max-w-xl w-full">
         <div className="flex flex-col gap-8">
-          <h1 className="font-raleway text-[32px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-black leading-tight text-black">
+          <h1 className="font-lato text-[32px] sm:text-[36px] font-bold md:text-[42px] lg:text-[48px] leading-10 lg:leading-14 text-black">
             Relevants – получайте доступ <br className="block sm:hidden" />
             <span className="inline sm:hidden">к специалистам</span>
             <span className="hidden sm:inline">к специалистам</span>{" "}
@@ -30,16 +30,16 @@ export const Hero = () => {
             </span>
           </h1>
 
-          <p className="font-raleway text-[16px] md:text-[18px] text-black max-w-[480px]">
+          <p className="font-lato text-[16px] md:text-[18px] font-normal leading-[26px] text-black max-w-[480px]">
             Здесь можно нанять специалиста на проект, задачу напрямую — без
             чатов, спама и ожидания
           </p>
 
           <div className="hidden lg:flex gap-5">
-            <button className="text-white bg-blue-600 px-6 py-3 rounded-full text-base lg:text-[18px] font-semibold hover:bg-blue-700">
+            <button className="text-white bg-blue-600 px-6 py-3 rounded-full text-[16px] lg:text-[18px] font-semibold leading-[26px] hover:bg-blue-700">
               Разместить задачу
             </button>
-            <button className="text-blue-600 border border-blue-600 px-6 py-3 rounded-full text-base lg:text-[18px] font-semibold ">
+            <button className="text-blue-600 border border-blue-600 px-6 py-3 rounded-full text-[16px] lg:text-[18px] leading-[26px] font-semibold ">
               Найти исполнителя
             </button>
           </div>

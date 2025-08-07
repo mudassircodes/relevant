@@ -71,12 +71,12 @@ export function HeroSection() {
         <div className="text-left sm:text-center">
           {/* Main Heading */}
           <div className=" lg:max-w-2xl pb-10 w-full mx-auto ">
-            <h1 className="text-[32px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#333333] leading-tight mb-3 xs:mb-4 sm:mb-6 sm:mx-auto">
+            <h1 className="text-[32px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#333333] leading-[52px] mb-3 xs:mb-4 sm:mb-6 sm:mx-auto">
               Мы помогаем собирать команды по всему миру
             </h1>
 
             {/* Subheading */}
-            <div className="text-[16px] md:text-[18px] text-[#666666] leading-relaxed sm:mx-auto mb-6 xs:mb-8 sm:mb-12 text-left sm:text-center">
+            <div className="text-[16px] md:text-[18px] text-[#666666] leading-[26px] font-normal sm:mx-auto mb-6 xs:mb-8 sm:mb-12 text-left sm:text-center">
               <p className="mb-2 xs:mb-3 sm:mb-4">
                 С Relevants вы быстрее запускаете проекты — за счёт точного
                 AI-подбора фрилансеров и сотрудников под ваши задачи.
@@ -103,7 +103,7 @@ export function HeroSection() {
           <div className="flex justify-center items-center mb-4 xs:mb-6 sm:mb-8 relative">
             {/* "с нами работают" text positioned on top of last 2 cards - desktop only */}
             <div className="absolute right-60 top-0 z-10 hidden lg:block  ">
-              <p className="text-lg sm:text-xl lg:text-2xl font-caveat font-bold text-[#333333] transform rotate-12 origin-bottom-right">
+              <p className="text-lg text-[40px] leading-[82px] font-caveat font-normal text-[#333333] transform rotate-12 origin-bottom-right">
                 с нами{" "}
                 <span className="underline decoration-2 underline-offset-4">
                   работают
@@ -116,10 +116,10 @@ export function HeroSection() {
                 {mobileAvatarData.map((avatar, index) => (
                   <div
                     key={`mobile-${index}`}
-                    className="flex flex-col p-3 items-center gap-5 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#F9F9FA] mobile-no-transform"
+                    className="flex flex-col p-[8px] items-center gap-5 rounded-[20px] shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#F9F9FA] mobile-no-transform"
                   >
                     <div
-                      className="rounded-lg p-3"
+                      className="rounded-[18px] p-3"
                       style={{ backgroundColor: avatar.bgColor }}
                     >
                       <Image
@@ -132,7 +132,7 @@ export function HeroSection() {
                       />
                     </div>
                     <div className="text-center">
-                      <p className="text-md font-caveat font-bold text-[#000000]">
+                      <p className="text-[20px] leading-7 font-caveat font-normal text-[#000000]">
                         {avatar.name}
                       </p>
                     </div>
@@ -150,24 +150,24 @@ export function HeroSection() {
                       transform: `translateY(${
                         Math.abs(index - 2) * 32 +
                         (index === 0
-                          ? 50
+                          ? 70
                           : index === 1
                           ? -11
                           : index === 3
                           ? -11
                           : index === 4
-                          ? 50
+                          ? 70
                           : 0)
                       }px) translateX(${
                         (index - 2) * -28 +
                         (index === 0
-                          ? 60
+                          ? 55
                           : index === 1
-                          ? 10
+                          ? 5
                           : index === 3
-                          ? -10
+                          ? -5
                           : index === 4
-                          ? -60
+                          ? -55
                           : 0)
                       }px) rotate(${
                         (index - 2) * 8 +
@@ -199,7 +199,7 @@ export function HeroSection() {
                       />
                     </div>
                     <div className="text-center ">
-                      <p className="lg:text-xl font-caveat font-bold text-[#000000]">
+                      <p className=" lg:text-[32px] font-caveat font-normal leading-[42px] text-[#000000]">
                         {avatar.name}
                       </p>
                     </div>
@@ -210,13 +210,13 @@ export function HeroSection() {
           </div>
 
           {/* Small text */}
-          <p className="text-xs xs:text-sm sm:text-sm text-[#666666] text-center mb-2 xs:mb-3 sm:mb-4 mt-4 xs:mt-6 sm:mt-10 md:mt-12 lg:mt-10 pt-1 xs:pt-2 sm:pt-4 md:pt-6 lg:pt-4 font-semibold">
+          <p className="text-[16px] lg:text-[18px] leading-[26px] font-lato font-normal   text-[#666666] text-center mb-2 xs:mb-3 sm:mb-4 mt-4 xs:mt-6 sm:mt-10 md:mt-12 lg:mt-10 pt-1 xs:pt-2 sm:pt-4 md:pt-6 lg:pt-4">
             Расскажите, что вы ищете
           </p>
 
           {/* Call to Action Button */}
           <div className="text-center">
-            <button className="inline-block bg-[#007BFF] text-white px-4 py-2  rounded-full font-semibold text-md  hover:bg-[#0056b3] transition-colors duration-200 shadow-md hover:shadow-lg">
+            <button className="inline-block bg-[#007BFF] text-white px-4 py-3 font-lato rounded-full font-normal lg:font-semibold text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] hover:bg-[#0056b3] transition-colors duration-200 shadow-md hover:shadow-lg">
               Подобрать исполнителя → 30 секунд
             </button>
           </div>

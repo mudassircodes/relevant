@@ -51,13 +51,13 @@ export function Header() {
                 </div>
 
                 {/* Desktop Nav Items */}
-                <ul className="hidden lg:flex mx-auto space-x-4 max-w-xl  xl:space-x-9">
+                <ul className="hidden lg:flex mx-auto space-x-4 xl:space-x-9">
                   {navItems.map((item) => (
                     <li key={item.title}>
                       <Link
                         href={item.href}
                         onClick={() => setIsMenuOpen(false)}
-                        className="font-raleway text-xs xl:text-md font-semibold text-[#131318] hover:opacity-70"
+                        className="font-lato font-normal text-xs leading-6 xl:text-[16px] text-[#131318] hover:opacity-70"
                       >
                         {item.title}
                       </Link>
@@ -72,7 +72,7 @@ export function Header() {
                       key={button.title}
                       href={button.href}
                       rel={button.external ? "noopener noreferrer" : undefined}
-                      className="text-blue-700 border-2  border-blue-500 px-3 py-2 rounded-full"
+                      className="text-blue-700 border-2 font-lato font-semibold text-[16px] leading-6 border-blue-500 px-3 py-2 rounded-full"
                     >
                       {button.title}
                     </Link>
@@ -87,7 +87,7 @@ export function Header() {
                         <Link
                           href={item.href}
                           onClick={() => setIsMenuOpen(false)}
-                          className="font-raleway text-lg font-semibold text-white hover:opacity-70"
+                          className="font-lato font-normal text-[20px] text-white hover:opacity-70"
                         >
                           {item.title}
                         </Link>

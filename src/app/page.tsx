@@ -1,5 +1,6 @@
 import { Hero } from "@/components/Hero"
 import { HeroSection } from "@/components/sections/HeroSection"
+import SectiontThree from "@/components/sections/SectiontThree"
 
 export default function HomePage() {
   return (
@@ -7,6 +8,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <Hero/>
       <HeroSection />
+      {/* <SectiontThree/> */}
     </div>
   )
 }

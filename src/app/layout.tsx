@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Caveat, Geist, Geist_Mono, Lato } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -67,13 +67,25 @@ export const metadata: Metadata = {
   },
 };
 
+const lato = Lato({
+  subsets: ['latin'],
+  weight: ['400', '700'], // Customize as needed
+  variable: '--font-lato',
+});
+
+const caveat = Caveat({
+  subsets: ['latin'],
+  weight: ['400', '700'], // Customize as needed
+  variable: '--font-caveat',
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${lato.variable} ${caveat.variable}`}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -82,7 +94,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-background font-sans`}>
+      <body className={`antialiased min-h-screen bg-background font-sans`}>
         <div className="relative flex flex-col">
           <Header />
           <main className="flex-1">{children}</main>
