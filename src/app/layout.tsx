@@ -4,7 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { siteConfig } from "@/lib/config";
-import '@/styles/global.css'
+import "@/styles/global.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -68,15 +68,15 @@ export const metadata: Metadata = {
 };
 
 const lato = Lato({
-  subsets: ['latin'],
-  weight: ['400', '700'], // Customize as needed
-  variable: '--font-lato',
+  subsets: ["latin"],
+  weight: ["400", "700"], // Customize as needed
+  variable: "--font-lato",
 });
 
 const caveat = Caveat({
-  subsets: ['latin'],
-  weight: ['400', '700'], // Customize as needed
-  variable: '--font-caveat',
+  subsets: ["latin"],
+  weight: ["400", "700"], // Customize as needed
+  variable: "--font-caveat",
 });
 
 export default function RootLayout({
@@ -88,7 +88,15 @@ export default function RootLayout({
     <html lang="en" className={`${lato.variable} ${caveat.variable}`}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"

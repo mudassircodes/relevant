@@ -102,8 +102,8 @@ export function HeroSection() {
           {/* Avatar Cards */}
           <div className="flex justify-center items-center mb-4 xs:mb-6 sm:mb-8 relative">
             {/* "с нами работают" text positioned on top of last 2 cards - desktop only */}
-            <div className="absolute right-60 top-0 z-10 hidden lg:block  ">
-              <p className="text-lg text-[40px] leading-[82px] font-caveat font-normal text-[#333333] transform rotate-12 origin-bottom-right">
+            <div className="absolute right-60 top-0 -mt-5 z-10 hidden lg:block  ">
+              <p className="text-[40px] leading-[82px] font-caveat font-normal text-[#333333] transform rotate-12 origin-bottom-right">
                 с нами{" "}
                 <span className="underline decoration-2 underline-offset-4">
                   работают
@@ -192,8 +192,8 @@ export function HeroSection() {
                       <Image
                         src={avatar.image}
                         alt={avatar.name}
-                        width={100}
-                        height={100}
+                        width={200}
+                        height={2000}
                         quality={100}
                         className="object-contain w-48 h-48 "
                       />
