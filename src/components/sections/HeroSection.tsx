@@ -70,18 +70,18 @@ export function HeroSection() {
       <div className="  mx-auto px-7">
         <div className="text-left sm:text-center">
           {/* Main Heading */}
-          <div className=" lg:max-w-2xl pb-10 w-full mx-auto ">
-            <h1 className="text-[32px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold text-[#333333] leading-[52px] mb-3 xs:mb-4 sm:mb-6 sm:mx-auto">
+          <div className=" lg:max-w-2xl font-lato pb-2 lg:pb-10 w-full mx-auto ">
+            <h1 className="text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-semibold text-[#333333] leading-[34px] lg:leading-[52px] mb-3 xs:mb-4 sm:mb-6 sm:mx-auto">
               Мы помогаем собирать команды по всему миру
             </h1>
 
             {/* Subheading */}
-            <div className="text-[16px] md:text-[18px] text-[#666666] leading-[26px] font-normal sm:mx-auto mb-6 xs:mb-8 sm:mb-12 text-left sm:text-center">
-              <p className="mb-2 xs:mb-3 sm:mb-4">
+            <div className="text-[16px] md:text-[18px] text-[#666666] leading-[24px] lg:leading-[26px] font-normal sm:mx-auto mb-6 xs:mb-8 sm:mb-12 text-left sm:text-center">
+              <p className="mb-5">
                 С Relevants вы быстрее запускаете проекты — за счёт точного
                 AI-подбора фрилансеров и сотрудников под ваши задачи.
               </p>
-              <p className="mb-2 xs:mb-3 sm:mb-4">
+              <p className="mb-5">
                 Поиск — как в TikTok: листаете подборку анкет и выбираете тех,
                 кто вам подходит. При взаимном мэтче контакты приходят в
                 Telegram — быстро, удобно, без лишних действий.
@@ -218,13 +218,12 @@ export function HeroSection() {
           </div>
 
           {/* Small text */}
-          <p className="text-[16px] lg:text-[18px] leading-[26px] font-lato font-normal   text-[#666666] text-center mb-2 xs:mb-3 sm:mb-4 mt-4 xs:mt-6 sm:mt-10 md:mt-12 lg:mt-10 pt-1 xs:pt-2 sm:pt-4 md:pt-6 lg:pt-4">
+          <p className="text-[16px] lg:text-[18px] leading-[26px] font-lato font-normal   text-[#666666] text-center mb-2 xs:mb-3 sm:mb-4 pt-[32px] lg:mt-10 lg:pt-4">
             Расскажите, что вы ищете
           </p>
 
-          {/* Call to Action Button */}
           <div className="text-center">
-            <button className="inline-block bg-[#007BFF] text-white px-4 py-3 font-lato rounded-full font-normal lg:font-semibold text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] hover:bg-[#0056b3] transition-colors duration-200 shadow-md hover:shadow-lg">
+            <button className="inline-block bg-[#3990FF] text-white px-4 py-3 font-lato rounded-full font-light lg:font-medium text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] hover:bg-[#0056b3] transition-colors duration-200 shadow-md hover:shadow-lg">
               Подобрать исполнителя → 30 секунд
             </button>
           </div>

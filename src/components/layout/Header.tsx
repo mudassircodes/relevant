@@ -47,7 +47,7 @@ export function Header() {
               >
                 {/* Mobile Close Button */}
                 <div className="lg:hidden absolute top-6 right-6" onClick={() => setIsMenuOpen(false)}>
-                  <X size={24} className="text-white" />
+                  <X size={34} className="text-white" />
                 </div>
 
                 <ul className="hidden lg:flex mx-auto space-x-4 xl:space-x-9">
@@ -79,14 +79,14 @@ export function Header() {
                 </div>
 
                 {/* Mobile Menu */}
-                <div className="lg:hidden flex flex-col w-full px-6 py-6">
+                <div className="lg:hidden flex flex-col justify-between h-screen px-6 py-6">
                   <ul className="flex flex-col gap-8 mt-20">
                     {navItems.map((item) => (
                       <li key={item.title}>
                         <Link
                           href={item.href}
                           onClick={() => setIsMenuOpen(false)}
-                          className="font-lato font-normal text-[20px] text-white hover:opacity-70"
+                          className="font-lato font-light text-[20px] leading-[28px] text-white hover:opacity-70"
                         >
                           {item.title}
                         </Link>
@@ -94,14 +94,14 @@ export function Header() {
                     ))}
                   </ul>
 
-                  <div className="flex flex-col gap-4 mt-6">
+                  <div className="flex flex-col gap-5 mt-6">
                     {actionButtons.map((button, index) => (
                       <Link
                         key={button.title}
                         href={button.href}
                         target={button.external ? "_blank" : undefined}
                         rel={button.external ? "noopener noreferrer" : undefined}
-                        className={`min-w-[200px] font-lato max-w-[240px] h-12 px-6 rounded-full text-base font-semibold flex items-center justify-center ${
+                        className={` font-lato py-3 px-6 rounded-full text-[16px] leading-[24px] font-light flex items-center justify-center ${
                           index === 0
                             ? "text-white bg-[#096BDE] "
                             : "text-[#096BDE] border-2 border-[#096BDE] bg-white"
