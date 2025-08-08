@@ -94,17 +94,17 @@ export function Header() {
                     ))}
                   </ul>
 
-                  <div className="flex flex-col gap-2 mt-6">
+                  <div className="flex flex-col gap-4 mt-6">
                     {actionButtons.map((button, index) => (
                       <Link
                         key={button.title}
                         href={button.href}
                         target={button.external ? "_blank" : undefined}
                         rel={button.external ? "noopener noreferrer" : undefined}
-                        className={`min-w-[200px] max-w-[240px] h-12 px-6 rounded-full text-base font-semibold flex items-center justify-center ${
+                        className={`min-w-[200px] font-lato max-w-[240px] h-12 px-6 rounded-full text-base font-semibold flex items-center justify-center ${
                           index === 0
-                            ? "text-white bg-blue-600 hover:bg-blue-700"
-                            : "text-blue-600 border border-blue-600 bg-white hover:bg-blue-50"
+                            ? "text-white bg-[#096BDE] "
+                            : "text-[#096BDE] border-2 border-[#096BDE] bg-white"
                         }`}
                       >
                         {button.title}
