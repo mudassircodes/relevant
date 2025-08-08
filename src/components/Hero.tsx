@@ -35,11 +35,11 @@ export const Hero = () => {
             чатов, спама и ожидания
           </p>
 
-          <div className="hidden lg:flex gap-5">
-            <button className="text-white bg-blue-600 px-6 py-3 rounded-full text-[16px] lg:text-[18px] font-semibold leading-[26px] hover:bg-blue-700">
+          <div className="hidden font-lato lg:flex gap-5">
+            <button className="text-white bg-[#3990FF] px-6 py-3 rounded-full text-[16px] lg:text-[18px] font-medium leading-[26px]">
               Разместить задачу
             </button>
-            <button className="text-blue-600 border border-blue-600 px-6 py-3 rounded-full text-[16px] lg:text-[18px] leading-[26px] font-semibold ">
+            <button className="text-blue-600 border-2 border-[#3990FF] px-6 py-3 rounded-full text-[16px] lg:text-[18px] leading-[26px] font-medium ">
               Найти исполнителя
             </button>
           </div>
@@ -57,16 +57,16 @@ export const Hero = () => {
           priority
         />
 
-        <div className="flex lg:hidden mt-10 px-10 justify-center flex-col gap-4">
+        <div className="flex lg:hidden mt-16 px-20 justify-center flex-col gap-4">
           <Link
             href="#"
-            className="text-white bg-blue-600 py-3 px-6 rounded-full text-sm font-semibold hover:bg-blue-700 text-center"
+            className="text-white bg-[#3990FF] py-3 px-4 rounded-full text-sm font-medium text-center"
           >
             Разместить задачу
           </Link>
           <Link
             href="#"
-            className="text-blue-600 border border-blue-600 bg-blue-50 py-3 px-6 rounded-full text-sm font-semibold hover:bg-blue-100 text-center"
+            className="text-blue-600 border-2 border-[#3990FF] py-3 px-4 rounded-full text-sm font-medium text-center"
           >
             Найти исполнителя
           </Link>

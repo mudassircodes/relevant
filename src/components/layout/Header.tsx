@@ -50,7 +50,6 @@ export function Header() {
                   <X size={24} className="text-white" />
                 </div>
 
-                {/* Desktop Nav Items */}
                 <ul className="hidden lg:flex mx-auto space-x-4 xl:space-x-9">
                   {navItems.map((item) => (
                     <li key={item.title}>
@@ -72,7 +71,7 @@ export function Header() {
                       key={button.title}
                       href={button.href}
                       rel={button.external ? "noopener noreferrer" : undefined}
-                      className="text-blue-700 border-2 font-lato font-semibold text-[16px] leading-6 border-blue-500 px-3 py-2 rounded-full"
+                      className="text-[#096BDE] border-2 font-lato font-medium text-[16px] leading-6 border-blue-400 px-3 py-2 rounded-full"
                     >
                       {button.title}
                     </Link>

@@ -91,22 +91,30 @@ export function HeroSection() {
 
           {/* "с нами работают" text - mobile */}
           <div className="text-center mb-4 lg:hidden">
-            <p className="text-lg font-caveat font-bold text-[#333333]">
+            <p className="text-[24px] leading-6 font-caveat font-normal text-[#333333]">
               с нами{" "}
-              <span className="underline decoration-2 underline-offset-4">
-                работают
-              </span>
+              <span className="relative px-1">
+                  работают 
+                  <div className="absolute -rotate-12 top-5 right-0" >
+
+                  <img src='/underline.svg' className="w-14" alt="" />
+                  </div>
+                </span>
             </p>
           </div>
 
           {/* Avatar Cards */}
           <div className="flex justify-center items-center mb-4 xs:mb-6 sm:mb-8 relative">
             {/* "с нами работают" text positioned on top of last 2 cards - desktop only */}
-            <div className="absolute right-60 top-0 -mt-5 z-10 hidden lg:block  ">
-              <p className="text-[40px] leading-[82px] font-caveat font-normal text-[#333333] transform rotate-12 origin-bottom-right">
+            <div className="absolute overflow-hidden right-60 top-0 -mt-10 z-10 hidden lg:block rotate-12  overflowhidden ">
+              <p className="text-[40px] leading-[82px] font-caveat font-normal text-[#333333] transform  origin-bottom-right">
                 с нами{" "}
-                <span className="underline decoration-2 underline-offset-4">
-                  работают
+                <span className="relative px-1">
+                  работают 
+                  <div className="absolute -rotate-12 -bottom-2 right-0" >
+
+                  <img src='/underline.svg' className="object-contain" alt="" />
+                  </div>
                 </span>
               </p>
             </div>
@@ -116,7 +124,7 @@ export function HeroSection() {
                 {mobileAvatarData.map((avatar, index) => (
                   <div
                     key={`mobile-${index}`}
-                    className="flex flex-col p-[8px] items-center gap-5 rounded-[20px] shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#F9F9FA] mobile-no-transform"
+                    className="flex flex-col p-[8px] items-center gap-2 rounded-[20px] shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#F9F9FA] mobile-no-transform"
                   >
                     <div
                       className="rounded-[18px] p-3"
@@ -131,7 +139,7 @@ export function HeroSection() {
                         className="w-48 h-48 object-contain"
                       />
                     </div>
-                    <div className="text-center">
+                    <div className="text-center ">
                       <p className="text-[20px] leading-7 font-caveat font-normal text-[#000000]">
                         {avatar.name}
                       </p>
