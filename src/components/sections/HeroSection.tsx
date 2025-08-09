@@ -71,17 +71,17 @@ export function HeroSection() {
         <div className="text-left sm:text-center">
           {/* Main Heading */}
           <div className=" lg:max-w-2xl font-lato pb-2 lg:pb-10 w-full mx-auto ">
-            <h1 className="text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-semibold text-[#333333] leading-[34px] lg:leading-[52px] mb-3 xs:mb-4 sm:mb-6 sm:mx-auto">
+            <h1 className="text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-semibold text-[#333333] leading-[34px] lg:leading-[52px] mb-4 xs:mb-4 sm:mb-6 sm:mx-auto">
               Мы помогаем собирать команды по всему миру
             </h1>
 
             {/* Subheading */}
             <div className="text-[16px] md:text-[18px] text-[#666666] leading-[24px] lg:leading-[26px] font-normal sm:mx-auto mb-6 xs:mb-8 sm:mb-12 text-left sm:text-center">
-              <p className="mb-5">
+              <p className="mb-4">
                 С Relevants вы быстрее запускаете проекты — за счёт точного
                 AI-подбора фрилансеров и сотрудников под ваши задачи.
               </p>
-              <p className="mb-5">
+              <p className="mb-4">
                 Поиск — как в TikTok: листаете подборку анкет и выбираете тех,
                 кто вам подходит. При взаимном мэтче контакты приходят в
                 Telegram — быстро, удобно, без лишних действий.
@@ -218,7 +218,7 @@ export function HeroSection() {
           </div>
 
           {/* Small text */}
-          <p className="text-[16px] lg:text-[18px] leading-[26px] font-lato font-normal   text-[#666666] text-center mb-2 xs:mb-3 sm:mb-4 pt-[32px] lg:mt-10 lg:pt-4">
+          <p className="text-[16px] lg:text-[18px] leading-[26px] font-lato font-normal   text-[#666666] text-center mb-2  pt-[32px] lg:mt-10 lg:pt-4">
             Расскажите, что вы ищете
           </p>
 
