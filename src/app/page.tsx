@@ -1,5 +1,6 @@
 import { Hero } from "@/components/Hero"
 import { HeroSection } from "@/components/sections/HeroSection"
+import SectionFour from "@/components/sections/SectionFour"
 import SectiontThree from "@/components/sections/SectiontThree"
 
 export default function HomePage() {
@@ -8,7 +9,8 @@ export default function HomePage() {
       {/* Hero Section */}
       <Hero/>
       <HeroSection />
-      {/* <SectiontThree/> */}
+      <SectiontThree/>
+      <SectionFour/>
     </div>
   )
 }
