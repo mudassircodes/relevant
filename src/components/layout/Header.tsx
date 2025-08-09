@@ -77,7 +77,6 @@ export function Header() {
                     </Link>
                   ))}
                 </div>
-
                 {/* Mobile Menu */}
                 <div className="lg:hidden flex flex-col justify-between h-screen px-6 py-6">
                   <ul className="flex flex-col gap-8 mt-20">
