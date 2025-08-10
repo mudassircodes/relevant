@@ -47,7 +47,7 @@ export default function SectionSix() {
         <div>
           <div className="mt-14 grid gap-4 lg:grid-cols-3">
             {data.map((item, index) => (
-              <div className="text-center">
+              <div key={index} className="text-center">
                 <h1 className="my-5 text-[24px] leading-[32px] lg:text-[40px] lg:leading-[52px] font-caveat">{item.head}</h1>
                 <div className="bg-[#F7F7F7] rounded-3xl px-6  pt-5">
                   <div className="w-64 space-y-4 mb-5 mx-auto">
