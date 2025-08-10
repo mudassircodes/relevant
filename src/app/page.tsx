@@ -1,6 +1,8 @@
 import { Hero } from "@/components/Hero"
 import { HeroSection } from "@/components/sections/HeroSection"
+import SectionFive from "@/components/sections/SectionFive"
 import SectionFour from "@/components/sections/SectionFour"
+import SectionSix from "@/components/sections/SectionSix"
 import SectiontThree from "@/components/sections/SectiontThree"
 
 export default function HomePage() {
@@ -11,6 +13,8 @@ export default function HomePage() {
       <HeroSection />
       <SectiontThree/>
       <SectionFour/>
+      <SectionFive/>
+      <SectionSix/>
     </div>
   )
 }

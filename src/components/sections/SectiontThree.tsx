@@ -16,12 +16,12 @@ export default function SectiontThree() {
               направления самые активные и с кем чаще всего стоит
               сотрудничество.
             </p>
-            <div className="absolute hidden lg:flex right-10 " >
+            <div className="absolute hidden lg:flex -bottom-6 right-3 " >
               <Image
                 src="/vector325.svg"
                 alt="arrow"
-                width={100}
-                height={100}
+                width={80}
+                height={80}
               />
             </div>
           </div>
