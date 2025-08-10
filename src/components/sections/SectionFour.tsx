@@ -15,29 +15,33 @@ export default function SectionFour() {
     { label: "Прочий digital-дизайн", value: 65, color: "bg-purple-200" },
   ];
  const stats2 = [
-    { label: "UI/UX, веб-дизайн", value: 10, color: "bg-green-300" },
+    { label: "SMM", value: 10, color: "bg-green-300" },
     {
-      label: "Логотипы, брендинг, фирстиль",
+      label: "Таргетированная реклама",
       value: 38,
       color: "bg-green-200",
     },
-    { label: "3D и Моушн-дизайн", value: 40, color: "bg-green-200" },
-    { label: "Презентации и визуализация", value: 60, color: "bg-green-200" },
-    { label: "Иллюстрации и Art", value: 47, color: "bg-green-200" },
-    { label: "Прочий digital-дизайн", value: 65, color: "bg-green-200" },
+    { label: "Контекст и SEO", value: 40, color: "bg-green-200" },
+    { label: "Email / CRM-маркетинг", value: 60, color: "bg-green-200" },
+    { label: "Аналитика и BI", value: 47, color: "bg-green-200" },
+    { label: "Продюсирование и запуски", value: 65, color: "bg-green-200" },
+    { label: "Прочий маркетинг", value: 65, color: "bg-green-200" },
+
   ];  
 
   const stats3 = [
-    { label: "UI/UX, веб-дизайн", value: 10, color: "bg-blue-300" },
+    { label: "Веб — и мобильная разработка", value: 10, color: "bg-blue-300" },
     {
-      label: "Логотипы, брендинг, фирстиль",
+      label: "No-code / Webflow / Tilda",
       value: 38,
       color: "bg-blue-200",
     },
-    { label: "3D и Моушн-дизайн", value: 40, color: "bg-blue-200" },
-    { label: "Презентации и визуализация", value: 60, color: "bg-blue-200" },
-    { label: "Иллюстрации и Art", value: 47, color: "bg-blue-200" },
-    { label: "Прочий digital-дизайн", value: 65, color: "bg-blue-200" },
+    { label: "Telegram-боты и мини-приложения", value: 40, color: "bg-blue-200" },
+    { label: "Чат-боты и автоматизация", value: 60, color: "bg-blue-200" },
+    { label: "Нейросети и AI-интеграции", value: 47, color: "bg-blue-200" },
+    { label: "Блокчейн и токены", value: 65, color: "bg-blue-200" },
+    { label: "Прочий IT-аутсорсинг", value: 35, color: "bg-blue-200" },
+
   ];  
   return (
     <section className="px-7 max-w-[1650px] 2xl:mx-auto md:px-14 pb-16 lg:pb-32 ">
@@ -124,11 +128,10 @@ export default function SectionFour() {
               {/* Title & Description */}
               <div className="lg:absolute lg:w-1/2 lg:bottom-0">
                 <h2 className="text-[22px] lg:text-[32px] font-semibold leading-[32px] lg:leading-[40px] mb-2">
-                  Дизайн
+                  Маркетинг
                 </h2>
                 <p className="text-[16px] leading-[24px] lg:leading-[28px] lg:text-[18px] font-normal text-gray-600">
-                  Каждый второй на платформе — дизайнер. Большинство делают
-                  интерфейсы и сайты
+                  Маркетологи с сильной экспертизой по запуску, анализу и продвижению — от постов до сквозной аналитики.
                 </p>
               </div>
             </div>
@@ -172,11 +175,10 @@ export default function SectionFour() {
               {/* Title & Description */}
               <div className="lg:absolute lg:w-1/2 lg:bottom-0">
                 <h2 className="text-[22px] lg:text-[32px] font-semibold leading-[32px] lg:leading-[40px] mb-2">
-                  Дизайн
+                  IT-разработка
                 </h2>
                 <p className="text-[16px] leading-[24px] lg:leading-[28px] lg:text-[18px] font-normal text-gray-600">
-                  Каждый второй на платформе — дизайнер. Большинство делают
-                  интерфейсы и сайты
+                  Инженерные решения, Telegram-боты, no-code и сложные проекты
                 </p>
               </div>
             </div>

@@ -85,7 +85,7 @@ export default function SectiontThree() {
               {/* Donut Image */}
               <div className="flex justify-center flex-shrink-0">
                 <Image
-                  src="/donut1.png"
+                  src="/donut2.png"
                   alt="donut"
                   width={200}
                   height={200}
@@ -130,7 +130,7 @@ export default function SectiontThree() {
               {/* Donut Image */}
               <div className="flex justify-center flex-shrink-0">
                 <Image
-                  src="/donut1.png"
+                  src="/donut3.png"
                   alt="donut"
                   width={200}
                   height={200}

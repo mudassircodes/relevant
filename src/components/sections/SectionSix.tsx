@@ -2,6 +2,28 @@ import Image from "next/image";
 import React from "react";
 
 export default function SectionSix() {
+  const data = [
+    {
+      head: "1 war",
+      title: "Создайте резюме или вакансию",
+      para: "Вы можете создавать два типа профилей. Создавайте множество профилей, если вам нужно собрать команду под проект",
+      img: "/iPhone.png",
+    },
+    {
+      head: "2 war",
+      title: "Получите подборку подходящих анкет",
+      para: "Больше никакого спама: вы сами просматриваете  профили или отклоняете их, получая новые и более релевантные",
+      img: "/iPhone.png",
+    },
+    {
+
+      head: "3 war",
+      title: "Получайте лайки и начинайте общаться",
+      para: "Вы можете создавать два типа профилей. Создавайте множество профилей, если вам нужно собрать команду под проект",
+      img: "/iPhone3.png",
+    },
+    
+  ];
   return (
     <section className="px-7 max-w-[1600px] 2xl:mx-auto md:px-14 lg:py-20 md:py-0  pb-28 lg:pb-32 ">
       <div>
@@ -20,26 +42,28 @@ export default function SectionSix() {
             </button>
           </div>
         </div>
+
+        {/* mobile card */}
+
         <div>
-          <div className="mt-14 hidden lg:flex">
-            <Image
-              src="/cardSix.png"
-              height={300}
-              width={1300}
-              quality={100}
-              alt="image"
-            />
-          </div>
-          <div className=" mt-14 lg:hidden">
-            <Image
-              src="/cardSixMob.png"
-              height={300}
-              width={1300}
-              quality={100}
-              alt="image"
-            />
+          <div className="mt-14 grid gap-4 lg:grid-cols-3">
+            {data.map((item, index) => (
+              <div className="text-center">
+                <h1 className="my-5 text-[24px] leading-[32px] lg:text-[40px] lg:leading-[52px] font-caveat">{item.head}</h1>
+                <div className="bg-[#F7F7F7] rounded-3xl px-6  pt-5">
+                  <div className="w-64 space-y-4 mb-5 mx-auto">
+                    <h1 className="text-[20px] leading-[28px] lg:text-[24px] lg:leading-[32px] font-semibold font-lato" >{item.title}</h1>
+                    <p className="font-light text-[14px] leading-[20px] lg:text-[16px] lg:leading-[24px]" >{item.para}</p>
+                  </div>
+
+                  <Image src={item.img} width={350} quality={100} height={500} className="mx-auto" alt="iphone" />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
+
+   
       </div>
     </section>
   );

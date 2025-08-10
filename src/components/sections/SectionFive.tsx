@@ -2,8 +2,9 @@ import Image from "next/image";
 import React from "react";
 
 export default function SectionFive() {
+
   return (
-    <section className="px-7 max-w-[1600px] 2xl:mx-auto md:px-14 py-[50px] md:py-0  pb-28 lg:pb-32 ">
+    <section className="px-7 max-w-[1600px] 2xl:mx-auto md:px-14 py-[50px] md:py-0  lg:pb-28 ">
       <div className="flex lg:flex-row flex-col justify-between  items-center  ">
         <div className=" w-full lg:max-w-xl">
           <h1 className="font-lato text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-semibold lg:font-bold leading-[34px] lg:leading-[52px] text-black">
@@ -26,26 +27,63 @@ export default function SectionFive() {
             alt="image"
           />
         </div>
-    
       </div>
-        <div className="hidden mt-5 lg:flex">
-          <Image
-            src="/cards.png"
-            height={300}
-            width={1400}
-            quality={100}
-            alt="image"
-          />
+
+      {/* cards */}
+
+      <div className="grid grid-cols-1 py-10 lg:grid-cols-2 gap-5 "  >
+        <div className="flex flex-col gap-4" >
+          <div className="border-[2.5px] hover:-translate-y-2 transition-all rounded-3xl p-5 border-blue-400">
+            <span className="p-2 px-4 text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] font-medium rounded-full bg-blue-200">
+              Наглядная статистика
+            </span>
+            <p className="mt-6 text-[16px] leading-[24px] ">
+              Мы сделали статистику просмотров вашего профиля — все наглядно
+              на любом отрезке времени. И покажем реальные ставки специалистов
+              с похожими навыками и опытом в вашей сфере.
+            </p>
+          </div>
+
+          <div className="border-[2.5px] hover:-translate-y-2 transition-all border-dashed rounded-3xl p-5 border-purple-400">
+            <span className="p-2 px-4 text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] font-medium rounded-full bg-purple-200">
+              Персонализация
+            </span>
+            <p className="mt-6 text-[16px] leading-[24px]">
+              Искусственный интеллект все время обучается и с каждым Вашем
+              мэтчем, побираются все более и более релевантные Профили под вас.
+              <br />
+              И все это в суперприятной механики пролистывания страниц, всем
+              полюбившихся Тик-ток и Ютуб Шортс.
+            </p>
+          </div>
         </div>
-       <div className="lg:hidden mt-5">
-          <Image
-            src="/sect5downmob.png"
-            height={300}
-            width={700}
-            quality={100}
-            alt="image"
-          />
+         <div className="flex flex-col lg:mt-14  gap-4" >
+          <div className="border-[2.5px] hover:-translate-y-2 transition-all border-dashed  rounded-3xl p-5 border-red-400">
+            <span className="p-2 px-4 text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px]font-medium rounded-full bg-red-200">
+              Наглядная статистика
+            </span>
+            <p className="mt-6 text-[16px] leading-[24px]">
+              Мы сделали статистику просмотров вашего профиля — все наглядно
+              на любом отрезке времени. И покажем реальные ставки специалистов
+              с похожими навыками и опытом в вашей сфере.
+            </p>
+          </div>
+
+          <div className="border-[2.5px] hover:-translate-y-2 transition-all rounded-3xl p-5 border-green-400">
+            <span className="p-2 px-4s text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px]font-medium rounded-full bg-green-200">
+              Персонализация
+            </span>
+            <p className="mt-6 text-[16px] leading-[24px]">
+              Искусственный интеллект все время обучается и с каждым Вашем
+              мэтчем, побираются все более и более релевантные Профили под вас.
+              <br />
+              И все это в суперприятной механики пролистывания страниц, всем
+              полюбившихся Тик-ток и Ютуб Шортс.
+            </p>
+          </div>
         </div>
+      </div>
+
     </section>
   );
 }
