@@ -42,7 +42,6 @@ export default function SectionSix() {
             </button>
           </div>
         </div>
-
         {/* mobile card */}
 
         <div>
