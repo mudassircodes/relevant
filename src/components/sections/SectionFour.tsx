@@ -44,7 +44,7 @@ export default function SectionFour() {
 
   ];  
   return (
-    <section className="px-7 max-w-[1650px] 2xl:mx-auto md:px-14 pb-16 lg:pb-32 ">
+    <section className="px-7 dark:bg-white max-w-[1650px] 2xl:mx-auto md:px-14 pb-16 lg:pb-32 ">
       {/* desktop */}
       <div className="flex flex-col">
         <div className="font-lato text-center lg:max-w-3xl mx-auto mb-5  space-y-4">

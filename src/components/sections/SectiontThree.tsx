@@ -3,7 +3,7 @@ import React from "react";
 
 export default function SectiontThree() {
   return (
-    <section className="px-7 max-w-[1600px] mx-auto md:px-14 lg:px-30 pb-16 lg:pb-32 lg:py-20 ">
+    <section className="px-7 dark:bg-white max-w-[1600px] mx-auto md:px-14 lg:px-30 pb-16 lg:pb-32 lg:py-20 ">
       <div className="grid grid-cols-1">
         <div className="flex flex-col lg:flex-row justify-between gap-5 py-5 items-center ">
           <div className="w-full md:max-w-xl lg:max-w-3xl lg:mr-10 relative">
@@ -80,9 +80,7 @@ export default function SectiontThree() {
               По опыту
             </h1>
 
-            {/* Content */}
             <div className="flex flex-col lg:flex-row items-center gap-6">
-              {/* Donut Image */}
               <div className="flex justify-center flex-shrink-0">
                 <Image
                   src="/donut2.png"
@@ -93,7 +91,6 @@ export default function SectiontThree() {
                 />
               </div>
 
-              {/* Text + Ratio */}
               <div className="flex flex-col justify-center w-full gap-3">
                 <div className="flex justify-between text-base">
                   <span className="flex items-center gap-2">
@@ -125,7 +122,6 @@ export default function SectiontThree() {
               По формату работы
             </h1>
 
-            {/* Content */}
             <div className="flex flex-col lg:flex-row items-center gap-6">
               {/* Donut Image */}
               <div className="flex justify-center flex-shrink-0">
@@ -138,7 +134,6 @@ export default function SectiontThree() {
                 />
               </div>
 
-              {/* Text + Ratio */}
               <div className="flex flex-col justify-center w-full gap-3">
                 <div className="flex justify-between text-base">
                   <span className="flex items-center gap-2">
@@ -154,56 +149,11 @@ export default function SectiontThree() {
                   </span>
                   <span>37%</span>
                 </div>
-                
               </div>
             </div>
           </div>
         </div>
       </div>
-      {/* <div className="lg:hidden mt-10 grid grid-cols-1 lg:place-items-center">
-        <div className="flex flex-col lg:flex-row justify-between gap-6 items-center ">
-          <div className="w-full sm:max-w-xl lg:max-w-[645px] relative">
-            <h1 className="font-lato text-[28px] font-semibold leading-[34px] text-black">
-              Собрали главное о специалистах на Relevants — в цифрах
-              и диаграммах
-            </h1>
-            <p className="font-lato mt-5 text-[16px] text-black font-normal leading-[24px] lg:max-w-md">
-              Это поможет быстро понять, кого можно найти через Relevants, какие
-              направления самые активные и с кем чаще всего стоит
-              сотрудничество.
-            </p>
-          </div>
-          <div className="w-full md:max-w-2xl">
-            <Image
-              src="/mobdonut1.png"
-              alt="donut"
-              width={650}
-              height={200}
-              className=""
-            />
-          </div>
-        </div>
-        <div className="flex flex-col lg:flex-row justify-between gap-4 py-4 items-center ">
-          <div className="w-full md:max-w-2xl">
-            <Image
-              src="/mobdonut2.png"
-              alt="donut"
-              width={650}
-              height={200}
-              className=""
-            />
-          </div>
-          <div className="w-full md:max-w-2xl">
-            <Image
-              src="/mobdonut3.png"
-              alt="donut"
-              width={650}
-              height={200}
-              className=""
-            />
-          </div>
-        </div>
-      </div> */}
     </section>
   );
 }

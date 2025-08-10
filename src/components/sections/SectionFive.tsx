@@ -4,7 +4,7 @@ import React from "react";
 export default function SectionFive() {
 
   return (
-    <section className="px-7 max-w-[1600px] 2xl:mx-auto md:px-14 py-[50px] md:py-0  lg:pb-28 ">
+    <section className="px-7 dark:bg-white max-w-[1600px] 2xl:mx-auto md:px-14 py-[50px] md:py-0  lg:pb-28 ">
       <div className="flex lg:flex-row flex-col justify-between  items-center  ">
         <div className=" w-full lg:max-w-xl">
           <h1 className="font-lato text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-semibold lg:font-bold leading-[34px] lg:leading-[52px] text-black">

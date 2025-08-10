@@ -25,7 +25,7 @@ export default function SectionSix() {
     
   ];
   return (
-    <section className="px-7 max-w-[1600px] 2xl:mx-auto md:px-14 lg:py-20 md:py-0  pb-28 lg:pb-32 ">
+    <section className="px-7 dark:bg-white max-w-[1600px] 2xl:mx-auto md:px-14 lg:py-20 md:py-0  pb-28 lg:pb-32 ">
       <div>
         <div className="lg:text-center lg:max-w-3xl lg:mx-auto">
           <h1 className="font-lato text-[32px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-semibold lg:font-bold leading-[34px] lg:leading-[52px] text-black">
