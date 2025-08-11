@@ -66,6 +66,8 @@ const mobileAvatarData = [
 
 export function HeroSection() {
   return (
+    <main className="dark:bg-white">
+
     <section className="w-full xl:max-w-[1600px] mx-auto bg-white py-16 sm:py-12 lg:py-32  z-0">
       <div className="  mx-auto px-7">
         <div className="text-left sm:text-center">
@@ -230,5 +232,7 @@ export function HeroSection() {
         </div>
       </div>
     </section>
+    </main>
+
   );
 }

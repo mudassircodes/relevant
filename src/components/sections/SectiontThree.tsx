@@ -28,7 +28,7 @@ export default function SectiontThree() {
             </div>
             <div className="bg-[#F9F9FA] p-5 lg:p-8 rounded-2xl w-full mx-auto">
               {/* Title */}
-              <h1 className="lg:text-[32px] text-black text-xl font-semibold leading-[40px] mb-6">
+              <h1 className="max-md:text-[22px] lg:text-[32px] text-black text-xl font-semibold leading-[40px] mb-6">
                 По направлениям
               </h1>
 
@@ -82,7 +82,7 @@ export default function SectiontThree() {
           <div className="flex flex-col lg:flex-row justify-between gap-6 py-5 items-center ">
             <div className="bg-[#F9F9FA] p-5 lg:p-8 rounded-2xl w-full max-w-3xl mx-auto">
               {/* Title */}
-              <h1 className="lg:text-[32px] text-black text-xl font-semibold leading-[40px] mb-6">
+              <h1 className="max-md:text-[22px] lg:text-[32px] text-black text-xl font-semibold leading-[40px] mb-6">
                 По опыту
               </h1>
 
@@ -124,7 +124,7 @@ export default function SectiontThree() {
             </div>
             <div className="bg-[#F9F9FA] p-5 lg:p-8 rounded-2xl w-full max-w-3xl mx-auto">
               {/* Title */}
-              <h1 className="lg:text-[32px] text-black text-xl font-semibold leading-[40px] mb-6">
+              <h1 className=" max-md:text-[22px] lg:text-[32px] text-black text-xl font-semibold leading-[40px] mb-6">
                 По формату работы
               </h1>
 
