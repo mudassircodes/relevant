@@ -19,7 +19,7 @@ export default function SectiontThree() {
               </p>
               <div className="absolute hidden lg:flex -bottom-6 right-3 ">
                 <Image
-                  src="/vector324.svg"
+                  src="/Vector325.svg"
                   alt="arrow"
                   width={80}
                   height={80}
