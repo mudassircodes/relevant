@@ -1,13 +1,9 @@
 "use client";
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { useRef } from "react";
+import React, { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react"; // Optional, for icons
-import "swiper/swiper-bundle.css";
 import Image from "next/image";
 
 export default function SectionSlider() {
-  const swiperRef = useRef<any>(null); // To reference Swiper instance
   const clients = [
     {
       img: "/slide1.png",
@@ -46,6 +42,20 @@ export default function SectionSlider() {
     },
   ];
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const itemsPerSlide = 4; // for large screens
+  const itemsPerSlideMobile = 1;
+
+  const totalSlides = clients.length;
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev === 0 ? totalSlides - 1 : prev - 1));
+  };
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev === totalSlides - 1 ? 0 : prev + 1));
+  };
+
   return (
     <main className="dark:bg-[#F7F7F8] bg-[#F7F7F8] mt-20 pt-10 lg:pt-0 lg:mt-0  ">
       <section className="px-7 font-lato text-black max-w-[1600px] 2xl:mx-auto md:px-14 mt-5 md:py-0 lg:py-32 ">
@@ -64,46 +74,29 @@ export default function SectionSlider() {
         </div>
         {/* testimonials */}
 
-        <div className="p-4 w-full ">
-          {/* Swiper Container */}
-          <div className="py-7 lg:py-20">
-            <div className=" ">
-              <Swiper
-                ref={swiperRef}
-                spaceBetween={30} // Space between slides
-                slidesPerView={1} // Default 1 slide for mobile
-                loop
-                autoplay={{ delay: 3000, disableOnInteraction: false }} // Smooth sliding with autoplay
-                breakpoints={{
-                  640: {
-                    slidesPerView: 1, // Mobile (1 slide)
-                  },
-                  768: {
-                    slidesPerView: 2, // Tablet (2 slides)
-                  },
-                  1024: {
-                    slidesPerView: 3, // Desktop (3 slides)
-                  },
-                  1280: {
-                    slidesPerView: 4, // Larger screens (4 slides)
-                  },
+        <div className="py-7 lg:py-20">
+          <div className=" overflow-hidden">
+            <div className="">
+              {/* Slider Content */}
+              <div
+                className="flex transition-transform duration-500"
+                style={{
+                  transform: `translateX(-${currentIndex * 100}%)`,
                 }}
-                pagination={{ clickable: true }} // Enable clickable pagination dots
-                navigation={{
-                  nextEl: ".swiper-button-next",
-                  prevEl: ".swiper-button-prev",
-                }} // Custom navigation
               >
                 {clients.map((client, index) => (
-                  <SwiperSlide className="" key={index}>
-                    <div className="bg-white p-6 rounded-3xl flex flex-col items-">
+                  <div
+                    key={index}
+                    className="w-full sm:w-1/2 lg:w-1/4 flex-shrink-0 px-4"
+                  >
+                    <div className="bg-white p-6 rounded-3xl">
                       {/* Client Image */}
-                      <div className="w-28 h-28 rounded-full mx-auto mb-4">
+                      <div className="w-28 h-28 rounded-full mx-auto mb-4 overflow-hidden">
                         <Image
-                          src={client.img} // Client image
+                          src={client.img}
                           alt={client.name}
-                          width={100}
-                          height={100}
+                          width={112}
+                          height={112}
                           className="object-cover rounded-full w-full h-full"
                           priority
                         />
@@ -113,78 +106,61 @@ export default function SectionSlider() {
                         {client.text}
                       </p>
 
-                      <div className="flex flex-wrap  gap-3 mb-4">
-                        {(client.tags && Array.isArray(client.tags)
-                          ? client.tags
-                          : []
-                        ).map((tag, idx) => (
+                      <div className="flex flex-wrap gap-3 mb-4">
+                        {client.tags.map((tag, idx) => (
                           <span
                             key={idx}
-                            className="text-gray-700 leading-[20px] "
+                            className="text-gray-700 leading-[20px]"
                           >
                             {tag}
                           </span>
                         ))}
                       </div>
 
-                      {/* Client Info */}
-                      <div className="">
+                      <div>
                         <h3 className="text-lg font-semibold text-gray-800">
                           {client.name}
                         </h3>
                         <p className="text-sm text-gray-500">{client.desc}</p>
                       </div>
                     </div>
-                  </SwiperSlide>
+                  </div>
                 ))}
-              </Swiper>
+              </div>
+            </div>
 
-              <div className="mt-7 lg:mt-14 flex gap-3 justify-start lg:justify-between">
-                <div className="hidden lg:flex"></div>
-                <div className="relative hidden lg:flex ">
-                  <button className=" border-2 px-4 py-3 rounded-full border-black text-black">
-                    Показать все отзывы
-                  </button>
-                  <Image
-                    src="/btnarrow.png"
-                    alt="arrow"
-                    className="absolute -right-6 -top-9"
-                    width={30}
-                    height={80}
-                  />
-                </div>
-                <div>
-                  <button
-                    onClick={() => swiperRef.current.swiper.slidePrev()}
-                    className=" border-2  border-black text-black p-2 rounded-full"
-                  >
-                    <ChevronLeft size={24} />
-                  </button>
-                  <button
-                    onClick={() => swiperRef.current.swiper.slideNext()}
-                    className=" border-2 ml-3 border-black text-black p-2 rounded-full transition"
-                  >
-                    <ChevronRight size={24} />
-                  </button>
-                </div>
+            <div className="mt-7  px-6 lg:mt-14 flex gap-3 justify-start lg:justify-between">
+              <div className="hidden lg:flex"></div>
+              <div className="relative hidden lg:flex ">
+                <button className=" border-2 px-4 py-3 rounded-full border-black text-black">
+                  Показать все отзывы
+                </button>
+                <Image
+                  src="/btnarrow.png"
+                  alt="arrow"
+                  className="absolute -right-6 -top-9"
+                  width={30}
+                  height={80}
+                />
+              </div>
+              <div>
+                <button
+                  onClick={prevSlide}
+                  className=" border-2  border-black text-black p-2 rounded-full"
+                >
+                  <ChevronLeft size={24} />
+                </button>
+                <button
+                  onClick={nextSlide}
+                  className=" border-2 ml-3 border-black text-black p-2 rounded-full transition"
+                >
+                  <ChevronRight size={24} />
+                </button>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* <div className="bg-white mx-auto p-6 rounded-3xl w-72">
-        <div className="w-28 -mt-20 h-28 rounded-full mx-auto mb-4">
-          <Image
-            src="/slide1.png" // Client image
-            alt="icon"
-            width={100}
-            height={100}
-            className="object-cover rounded-full w-full h-full"
-            priority
-          />
-        </div>
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam perferendis cumque vitae sed laboriosam voluptates quia quaerat porro! Dolores, quae qui. Repudiandae nesciunt cupiditate aliquam dicta commodi amet ad facere?</h1>
-      </div> */}
     </main>
   );
 }
