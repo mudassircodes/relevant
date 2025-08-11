@@ -28,7 +28,7 @@ export default function SectionSix() {
     <main className="dark:bg-white">
 
 
-    <section className="px-7 dark:bg-white max-w-[1600px] 2xl:mx-auto md:px-14 lg:py-20 md:py-0  pb-28 lg:pb-32 ">
+    <section className="px-7 dark:bg-white max-w-[1600px] 2xl:mx-auto md:px-14  md:py-0 py-20 lg:pt-0 ">
       <div>
         <div className="lg:text-center  text-black lg:max-w-3xl lg:mx-auto">
           <h1 className="font-lato text-[28px] md:text-[42px] lg:text-[48px] font-semibold lg:font-bold leading-[34px] lg:leading-[52px] text-black">

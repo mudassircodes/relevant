@@ -18,28 +18,28 @@ export default function SectionSlider() {
     },
     {
       img: "/slide2.png",
-      text: "Как HR менеджер, мне приходится найти лучших специалистов для наших проектов. А это всегда занимает много времени. Эта платформа значительно упростила мою работу. 🌟 Спасибо!",
+      text: "Как HR менеджер, мне приходится найти лучших специалистов для наших проектов. А это всегда занимает много времени. Эта платформа значительно упростила мою работу. 🌟 Спасибо!",
       tags: ["#HR", "#поискспециалистов", "#relevants"],
       name: "Светлана",
       desc: "Дизайнер",
     },
     {
       img: "/slide3.png",
-      text: "С этой платформой больше не трачу много времени на поиск команды для своего проекта. Просто отлично! 💼",
+      text: "С этой платформой больше не трачу много времени на поиск команды для своего проекта. Просто отлично! 💼",
       tags: ["#поисккоманды", "#проекты", "#relevants"],
       name: "Светлана",
       desc: "Дизайнер",
     },
     {
       img: "/slide4.png",
-      text: "Отличная платформа для свободных профессионалов как я. Для меня тут все, что нужно для успешных проектов. 💼👨‍💻",
+      text: "Отличная платформа для свободных профессионалов как я. Для меня тут все, что нужно для успешных проектов. 💼👨‍💻",
       tags: ["#фриланс", "#партнёрство", "#relevants"],
       name: "Светлана",
       desc: "Дизайнер",
     },
     {
       img: "/slide5.png",
-      text: "Отличная платформа для свободных профессионалов как я. Для меня тут все, что нужно для успешных проектов. 💼👨‍💻",
+      text: "Отличная платформа для свободных профессионалов как я. Для меня тут все, что нужно для успешных проектов. 💼👨‍💻",
       tags: ["#копирайтинг", "#удаленнаяработа", "#relevants"],
       name: "Светлана",
       desc: "Дизайнер",
@@ -50,15 +50,15 @@ export default function SectionSlider() {
     <main className="dark:bg-[#F7F7F8] bg-[#F7F7F8] mt-20 pt-10 lg:pt-0 lg:mt-0  ">
       <section className="px-7 font-lato text-black max-w-[1600px] 2xl:mx-auto md:px-14 mt-5 md:py-0 lg:py-32 ">
         <div>
-          <div className="lg:px-64 space-y-8  mx-auto">
+          <div className="lg:px-64 text-black space-y-6 lg:space-y-8  mx-auto">
             <h1 className=" text-[28px] text-center leading-[34px] font-semibold lg:text-[48px] lg:font-bold lg:leading-[52px]">
-              Что говорят о нас
+              Что говорят о нас
             </h1>
-            <p className="font-lato text-[14px] lg:text-center leading-[20px] lg:text-[18px] lg:leading-[26px]">
-              Relevants создан командой ИТ-специалистов и креаторов из топовых
-              digital агентств с международным опытом, которые не понаслышке
-              знают, что кадры решают и знаем, насколько важно, чтобы запуск
-              проектов и поиск специалистов был доступным и быстрым
+            <p className="font-lato text-[14px] text-center leading-[20px] lg:text-[18px] lg:leading-[26px]">
+              Relevants создан командой ИТ-специалистов и креаторов из топовых
+              digital агентств с международным опытом, которые не понаслышке
+              знают, что кадры решают и знаем, насколько важно, чтобы запуск
+              проектов и поиск специалистов был доступным и быстрым
             </p>
           </div>
         </div>
@@ -66,8 +66,8 @@ export default function SectionSlider() {
 
         <div className="p-4 w-full ">
           {/* Swiper Container */}
-          <div className="py-20">
-            <div className="relative">
+          <div className="py-7 lg:py-20">
+            <div className=" ">
               <Swiper
                 ref={swiperRef}
                 spaceBetween={30} // Space between slides
@@ -94,18 +94,17 @@ export default function SectionSlider() {
                   prevEl: ".swiper-button-prev",
                 }} // Custom navigation
               >
-                {/* SwiperSlides - Testimonial Cards */}
                 {clients.map((client, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="bg-white p-6 rounded-xl flex flex-col items-">
+                  <SwiperSlide className="" key={index}>
+                    <div className="bg-white p-6 rounded-3xl flex flex-col items-">
                       {/* Client Image */}
-                      <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-gray-200 mx-auto mb-4">
+                      <div className="w-28 h-28 rounded-full mx-auto mb-4">
                         <Image
                           src={client.img} // Client image
                           alt={client.name}
                           width={100}
                           height={100}
-                          className="object-cover w-full h-full"
+                          className="object-cover rounded-full w-full h-full"
                           priority
                         />
                       </div>
@@ -140,13 +139,19 @@ export default function SectionSlider() {
                 ))}
               </Swiper>
 
-              <div className="lg:mt-14 flex gap-3 justify-start lg:justify-between">
-                <div className="hidden lg:flex" ></div>
-                <div className="relative hidden lg:flex " >
+              <div className="mt-7 lg:mt-14 flex gap-3 justify-start lg:justify-between">
+                <div className="hidden lg:flex"></div>
+                <div className="relative hidden lg:flex ">
                   <button className=" border-2 px-4 py-3 rounded-full border-black text-black">
-                    Показать все отзывы
+                    Показать все отзывы
                   </button>
-                  <Image src='/btnarrow.png' alt="arrow" className="absolute -right-6 -top-9" width={30} height={80} />
+                  <Image
+                    src="/btnarrow.png"
+                    alt="arrow"
+                    className="absolute -right-6 -top-9"
+                    width={30}
+                    height={80}
+                  />
                 </div>
                 <div>
                   <button
@@ -167,6 +172,19 @@ export default function SectionSlider() {
           </div>
         </div>
       </section>
+      {/* <div className="bg-white mx-auto p-6 rounded-3xl w-72">
+        <div className="w-28 -mt-20 h-28 rounded-full mx-auto mb-4">
+          <Image
+            src="/slide1.png" // Client image
+            alt="icon"
+            width={100}
+            height={100}
+            className="object-cover rounded-full w-full h-full"
+            priority
+          />
+        </div>
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam perferendis cumque vitae sed laboriosam voluptates quia quaerat porro! Dolores, quae qui. Repudiandae nesciunt cupiditate aliquam dicta commodi amet ad facere?</h1>
+      </div> */}
     </main>
   );
 }

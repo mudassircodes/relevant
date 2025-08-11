@@ -3,7 +3,7 @@ import React from "react";
 export default function SectionInput() {
   return (
     <main className="dark:bg-white">
-      <section className="px-7 font-lato dark:bg-white max-w-[1600px] 2xl:mx-auto md:px-14 mt-5 md:py-0 lg:py-32 ">
+      <section className="px-7 font-lato dark:bg-white max-w-[1600px] 2xl:mx-auto md:px-14 mt-5 md:py-0 lg:py-28 ">
         <div className="bg-[#DDF1FF] text-black rounded-2xl p-7 lg:p-20 ">
           <div className="lg:max-w-3xl">
             <h1 className="text-[28px] font-semibold leading-[34px] lg:font-bold lg:text-[48px] lg:leading-[52px]">
