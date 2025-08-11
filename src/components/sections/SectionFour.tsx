@@ -47,8 +47,8 @@ export default function SectionFour() {
     <section className="px-7 dark:bg-white max-w-[1650px] 2xl:mx-auto md:px-14 pb-16 lg:pb-32 ">
       {/* desktop */}
       <div className="flex flex-col">
-        <div className="font-lato text-center lg:max-w-3xl mx-auto mb-5  space-y-4">
-          <h1 className="text-[48px] font-bold leading-[52px]">
+        <div className="font-lato text-black  lg:text-center lg:max-w-3xl mx-auto mb-5  space-y-4">
+          <h1 className="text-[28px] lg:text-[48px] font-bold leading-[34px] lg:leading-[52px]">
             Посмотрите, на какие задачи уже нанимают специалистов
           </h1>
           <p className="text-[18px] font-normal leading-[26px] ">
@@ -58,7 +58,7 @@ export default function SectionFour() {
         </div>
 
         <div className="bg-[#F9F9FA] p-5 lg:p-8 rounded-2xl w-full my-5  mx-auto">
-          <div className="flex font-lato relative flex-col lg:flex-row lg:items-start gap-6">
+          <div className="flex text-black  font-lato relative flex-col lg:flex-row lg:items-start gap-6">
             {/* Left Side */}
             <div className=" lg:w-1/2 flex lg:flex-col flex-row-reverse  h-full ">
               {/* Top percentage */}
@@ -114,7 +114,7 @@ export default function SectionFour() {
             </p>
           </div> */}
         </div>
-        <div className="bg-[#F9F9FA] p-5 lg:p-8 rounded-2xl w-full my-5  mx-auto">
+        <div className="bg-[#F9F9FA] text-black  p-5 lg:p-8 rounded-2xl w-full my-5  mx-auto">
           <div className="flex font-lato relative flex-col lg:flex-row-reverse lg:items-start gap-6">
             {/* Left Side */}
             <div className=" lg:w-1/2 flex lg:flex-col flex-row-reverse  h-full ">
@@ -161,7 +161,7 @@ export default function SectionFour() {
             </div>
           </div>
         </div>
-        <div className="bg-[#F9F9FA] p-5 lg:p-8 rounded-2xl w-full lg:my-5  mx-auto">
+        <div className="bg-[#F9F9FA] text-black  p-5 lg:p-8 rounded-2xl w-full lg:my-5  mx-auto">
           <div className="flex font-lato relative flex-col lg:flex-row lg:items-start gap-6">
             {/* Left Side */}
             <div className=" lg:w-1/2 flex lg:flex-col flex-row-reverse  h-full ">

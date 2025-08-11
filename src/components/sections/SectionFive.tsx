@@ -29,11 +29,10 @@ export default function SectionFive() {
         </div>
       </div>
 
-      {/* cards */}
 
-      <div className="grid grid-cols-1 py-10 lg:grid-cols-2 gap-5 "  >
+      <div className="grid text-black  grid-cols-1 py-10 lg:grid-cols-2 gap-5 "  >
         <div className="flex flex-col gap-4" >
-          <div className="border-[2.5px] hover:-translate-y-2 transition-all rounded-3xl p-5 border-blue-400">
+          <div className="border-[2.5px] transition-all rounded-3xl p-5 border-blue-400">
             <span className="p-2 px-4 text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] font-medium rounded-full bg-blue-200">
               Наглядная статистика
             </span>
@@ -44,7 +43,7 @@ export default function SectionFive() {
             </p>
           </div>
 
-          <div className="border-[2.5px] hover:-translate-y-2 transition-all border-dashed rounded-3xl p-5 border-purple-400">
+          <div className="border-[2.5px] transition-all border-dashed rounded-3xl p-5 border-purple-400">
             <span className="p-2 px-4 text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] font-medium rounded-full bg-purple-200">
               Персонализация
             </span>
@@ -58,27 +57,21 @@ export default function SectionFive() {
           </div>
         </div>
          <div className="flex flex-col lg:mt-14  gap-4" >
-          <div className="border-[2.5px] hover:-translate-y-2 transition-all border-dashed  rounded-3xl p-5 border-red-400">
+          <div className="border-[2.5px] transition-all border-dashed  rounded-3xl p-5 border-red-400">
             <span className="p-2 px-4 text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px]font-medium rounded-full bg-red-200">
-              Наглядная статистика
+              Гибкость
             </span>
             <p className="mt-6 text-[16px] leading-[24px]">
-              Мы сделали статистику просмотров вашего профиля — все наглядно
-              на любом отрезке времени. И покажем реальные ставки специалистов
-              с похожими навыками и опытом в вашей сфере.
+              Выбирайте себе специалиста в долгосрочное сотрудничество или на короткий проект по определённому скиллу, по доходу, по гео-локации и даже по удобному только вам формату работы с заданной разницей во времени.
             </p>
           </div>
 
-          <div className="border-[2.5px] hover:-translate-y-2 transition-all rounded-3xl p-5 border-green-400">
+          <div className="border-[2.5px] transition-all rounded-3xl p-5 border-green-400">
             <span className="p-2 px-4s text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px]font-medium rounded-full bg-green-200">
-              Персонализация
+              Безопасная среда
             </span>
             <p className="mt-6 text-[16px] leading-[24px]">
-              Искусственный интеллект все время обучается и с каждым Вашем
-              мэтчем, побираются все более и более релевантные Профили под вас.
-              <br />
-              И все это в суперприятной механики пролистывания страниц, всем
-              полюбившихся Тик-ток и Ютуб Шортс.
+              Наш искусственный интеллект проверяет при создании контента каждый шаг и блокирует заведомо подозрительные и фейковые Профили, запрещённый контент и даже включая нежелательные фото Профиля. Также участники самостоятельно блокируют недобросовестных пользователей через нашу форму обратной связи.
             </p>
           </div>
         </div>
