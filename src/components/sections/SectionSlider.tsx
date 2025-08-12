@@ -1,6 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+// import { ChevronLeft, ChevronRight } from "lucide-react";
+import { IoIosArrowRoundForward, IoIosArrowRoundBack  } from "react-icons/io";
+
 import { clients } from "@/constant/index";
 import Image from "next/image";
 
@@ -32,7 +34,7 @@ export default function SectionSlider() {
   const nextSlide = () => setCurrentIndex((i) => Math.min(maxIndex, i + 1));
 
   return (
-    <main className="dark:bg-[#F7F7F8] bg-[#F7F7F8] py-10 md:py-14 xl:py-20">
+    <main className="dark:bg-[#F7F7F8] bg-[#F7F7F8] py-14 mt-10 md:py-20 xl:py-28">
       <section className="px-7 font-lato text-black max-w-[1600px] 2xl:mx-auto md:px-14 ">
         <div>
           <div className="   max-w-2xl xl:max-w-3xl text-black space-y-6 xl:space-y-8 mx-auto">
@@ -133,7 +135,7 @@ export default function SectionSlider() {
                   aria-disabled={!canPrev}
                   aria-label="Previous"
                 >
-                  <ChevronLeft size={24} />
+                  <IoIosArrowRoundBack  size={24} />
                 </button>
                 <button
                   onClick={nextSlide}
@@ -146,7 +148,7 @@ export default function SectionSlider() {
                   aria-disabled={!canNext}
                   aria-label="Next"
                 >
-                  <ChevronRight size={24} />
+                  <IoIosArrowRoundForward size={24} />
                 </button>
               </div>
             </div>
