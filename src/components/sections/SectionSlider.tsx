@@ -1,70 +1,45 @@
 "use client";
-import React, { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react"; // Optional, for icons
+import React, { useEffect, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { clients } from "@/constant/index";
 import Image from "next/image";
 
 export default function SectionSlider() {
-  const clients = [
-    {
-      img: "/slide1.png",
-      text: "Здесь я нашла множество интересных проектов и работу на свой вкус. Рекомендую!",
-      tags: ["#фриланс", "#поискработы", "#relevants"], // Array of tags
-      name: "Светлана",
-      desc: "Дизайнер",
-    },
-    {
-      img: "/slide2.png",
-      text: "Как HR менеджер, мне приходится найти лучших специалистов для наших проектов. А это всегда занимает много времени. Эта платформа значительно упростила мою работу. 🌟 Спасибо!",
-      tags: ["#HR", "#поискспециалистов", "#relevants"],
-      name: "Светлана",
-      desc: "Дизайнер",
-    },
-    {
-      img: "/slide3.png",
-      text: "С этой платформой больше не трачу много времени на поиск команды для своего проекта. Просто отлично! 💼",
-      tags: ["#поисккоманды", "#проекты", "#relevants"],
-      name: "Светлана",
-      desc: "Дизайнер",
-    },
-    {
-      img: "/slide4.png",
-      text: "Отличная платформа для свободных профессионалов как я. Для меня тут все, что нужно для успешных проектов. 💼👨‍💻",
-      tags: ["#фриланс", "#партнёрство", "#relevants"],
-      name: "Светлана",
-      desc: "Дизайнер",
-    },
-    {
-      img: "/slide5.png",
-      text: "Отличная платформа для свободных профессионалов как я. Для меня тут все, что нужно для успешных проектов. 💼👨‍💻",
-      tags: ["#копирайтинг", "#удаленнаяработа", "#relevants"],
-      name: "Светлана",
-      desc: "Дизайнер",
-    },
-  ];
-
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [visible, setVisible] = useState(1);
 
-  const itemsPerSlide = 4; // for large screens
-  const itemsPerSlideMobile = 1;
+  useEffect(() => {
+    const mqSm = window.matchMedia("(min-width: 640px)");
+    const mqLg = window.matchMedia("(min-width: 1024px)");
 
-  const totalSlides = clients.length;
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev === 0 ? totalSlides - 1 : prev - 1));
-  };
+    const updateVisible = () =>
+      setVisible(mqLg.matches ? 4 : mqSm.matches ? 2 : 1);
+    updateVisible();
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev === totalSlides - 1 ? 0 : prev + 1));
-  };
+    mqSm.addEventListener("change", updateVisible);
+    mqLg.addEventListener("change", updateVisible);
+    return () => {
+      mqSm.removeEventListener("change", updateVisible);
+      mqLg.removeEventListener("change", updateVisible);
+    };
+  }, []);
+
+  const maxIndex = Math.max(0, clients.length - visible);
+  const canPrev = currentIndex > 0;
+  const canNext = currentIndex < maxIndex;
+
+  const prevSlide = () => setCurrentIndex((i) => Math.max(0, i - 1));
+  const nextSlide = () => setCurrentIndex((i) => Math.min(maxIndex, i + 1));
 
   return (
-    <main className="dark:bg-[#F7F7F8] bg-[#F7F7F8] mt-20 pt-10 lg:pt-0 lg:mt-0  ">
-      <section className="px-7 font-lato text-black max-w-[1600px] 2xl:mx-auto md:px-14 mt-5 md:py-0 lg:py-32 ">
+    <main className="dark:bg-[#F7F7F8] bg-[#F7F7F8] py-10 md:py-14 xl:py-20">
+      <section className="px-7 font-lato text-black max-w-[1600px] 2xl:mx-auto md:px-14 ">
         <div>
-          <div className="lg:px-64 text-black space-y-6 lg:space-y-8  mx-auto">
-            <h1 className=" text-[28px] text-center leading-[34px] font-semibold lg:text-[48px] lg:font-bold lg:leading-[52px]">
+          <div className="   max-w-2xl xl:max-w-3xl text-black space-y-6 xl:space-y-8 mx-auto">
+            <h1 className="text-[28px] text-center leading-[34px] font-semibold md:text-[35px] xl:text-[48px] lg:font-bold lg:leading-[52px]">
               Что говорят о нас
             </h1>
-            <p className="font-lato text-[14px] text-center leading-[20px] lg:text-[18px] lg:leading-[26px]">
+            <p className="font-lato text-[14px] text-left md:text-center leading-[20px] xl:text-[18px] lg:leading-[26px]">
               Relevants создан командой ИТ-специалистов и креаторов из топовых
               digital агентств с международным опытом, которые не понаслышке
               знают, что кадры решают и знаем, насколько важно, чтобы запуск
@@ -72,45 +47,44 @@ export default function SectionSlider() {
             </p>
           </div>
         </div>
-        {/* testimonials */}
 
-        <div className="py-7 lg:py-20">
-          <div className=" overflow-hidden">
-            <div className="">
-              {/* Slider Content */}
-              <div
-                className="flex transition-transform duration-500"
-                style={{
-                  transform: `translateX(-${currentIndex * 100}%)`,
-                }}
-              >
-                {clients.map((client, index) => (
-                  <div
-                    key={index}
-                    className="w-full sm:w-1/2 lg:w-1/4 flex-shrink-0 px-4"
-                  >
-                    <div className="bg-white p-6 rounded-3xl">
-                      {/* Client Image */}
-                      <div className="w-28 h-28 rounded-full mx-auto mb-4 overflow-hidden">
-                        <Image
-                          src={client.img}
-                          alt={client.name}
-                          width={112}
-                          height={112}
-                          className="object-cover rounded-full w-full h-full"
-                          priority
-                        />
-                      </div>
+        <div className="py-5 md:py-14 xl:py-20">
+          <div className="overflow-x-hidden overflow-y-auto">
+            {/* Track */}
+            <div
+              className="flex items-start transition-transform duration-500 will-change-transform"
+              style={{
+                transform: `translateX(-${(currentIndex * 100) / visible}%)`,
+              }}
+            >
+              {clients.map((client, index) => (
+                <div
+                  key={index}
+                  className="flex-shrink-0 px-2 xl:px-4"
+                  style={{ width: `${100 / visible}%` }}
+                >
+                  <div className="relative overflow-x-hidden overflow-y-visible pt-16">
+                    <div className="absolute left-1/2 -translate-x-1/2 top-8 md:top-4 xl:top-0 w-[65px] h-[65px]  md:w-[80px] md:h-[80px]  xl:w-[121px] xl:h-[121px] rounded-full overflow-hidden z-10">
+                      <Image
+                        src={client.img}
+                        alt={client.name}
+                        width={121}
+                        height={121}
+                        className="object-cover w-full h-full rounded-full"
+                        priority
+                      />
+                    </div>
 
-                      <p className="text-gray-700 text-lg mb-4">
+                    <div className="bg-white p-4 xl:p-6 pt-12 xl:pt-20 rounded-3xl">
+                      <p className="text-gray-700 text-[12px] xl:text-lg mb-4">
                         {client.text}
                       </p>
 
-                      <div className="flex flex-wrap gap-3 mb-4">
+                      <div className="flex  text-xs xl:text-base flex-wrap gap-1 xl:gap-3  mb-4">
                         {client.tags.map((tag, idx) => (
                           <span
                             key={idx}
-                            className="text-gray-700 leading-[20px]"
+                            className="text-gray-800 leading-[20px]"
                           >
                             {tag}
                           </span>
@@ -118,21 +92,24 @@ export default function SectionSlider() {
                       </div>
 
                       <div>
-                        <h3 className="text-lg font-semibold text-gray-800">
+                        <h3 className=" text-sm xl:text-lg font-semibold text-gray-800">
                           {client.name}
                         </h3>
-                        <p className="text-sm text-gray-500">{client.desc}</p>
+                        <p className=" text-xs xl:text-sm text-gray-500">
+                          {client.desc}
+                        </p>
                       </div>
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
 
-            <div className="mt-7  px-6 lg:mt-14 flex gap-3 justify-start lg:justify-between">
-              <div className="hidden lg:flex"></div>
-              <div className="relative hidden lg:flex ">
-                <button className=" border-2 px-4 py-3 rounded-full border-black text-black">
+            {/* Footer / Controls */}
+            <div className="mt-7 px-6 lg:mt-14 flex gap-3 justify-start lg:justify-between">
+              <div className="hidden lg:flex" />
+              <div className="relative hidden lg:flex">
+                <button className="border-2 px-4 py-3 rounded-full border-black text-black">
                   Показать все отзывы
                 </button>
                 <Image
@@ -143,16 +120,31 @@ export default function SectionSlider() {
                   height={80}
                 />
               </div>
-              <div>
+
+              <div className="flex items-center">
                 <button
                   onClick={prevSlide}
-                  className=" border-2  border-black text-black p-2 rounded-full"
+                  disabled={!canPrev}
+                  className={`border-2 border-black text-black p-2 rounded-full transition ${
+                    !canPrev
+                      ? "opacity-40 cursor-not-allowed"
+                      : "hover:scale-105"
+                  }`}
+                  aria-disabled={!canPrev}
+                  aria-label="Previous"
                 >
                   <ChevronLeft size={24} />
                 </button>
                 <button
                   onClick={nextSlide}
-                  className=" border-2 ml-3 border-black text-black p-2 rounded-full transition"
+                  disabled={!canNext}
+                  className={`border-2 ml-3 border-black text-black p-2 rounded-full transition ${
+                    !canNext
+                      ? "opacity-40 cursor-not-allowed"
+                      : "hover:scale-105"
+                  }`}
+                  aria-disabled={!canNext}
+                  aria-label="Next"
                 >
                   <ChevronRight size={24} />
                 </button>

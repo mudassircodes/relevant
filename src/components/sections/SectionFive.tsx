@@ -53,15 +53,7 @@ export default function SectionFive() {
               </p>
             </div>
 
-            <div
-              style={{
-                border: "2px dashed purple",
-                borderImage:"repeating-linear-gradient(45deg, purple 0%, purple 10px, transparent 8px, transparent 20px) 2",
-                padding: "1.5rem",
-                borderRadius: "1.5rem",
-              }}
-              className="transition-all rounde-3xl overflow-hidden p-5 border-purple-400"
-            >
+            <div className="dash-purple-border  bg-white">
               <span className="p-2 px-4 text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] font-medium rounded-full bg-purple-200">
                 Персонализация
               </span>
@@ -75,17 +67,8 @@ export default function SectionFive() {
               </p>
             </div>
           </div>
-          <div 
-          className="flex flex-col lg:mt-14  gap-4">
-            <div 
-            style={{
-                border: "2px dashed red",
-                borderImage:
-                  "repeating-linear-gradient(45deg, red 0%, red 10px, transparent 8px, transparent 20px) 2",
-                padding: "1.5rem",
-                borderRadius: "1.5rem", // Equivalent to Tailwind's rounded-3xl
-              }}
-             className="border-2  border-dashed rounded-3xl p-5 border-red-400">
+          <div className="flex flex-col lg:mt-14  gap-4">
+            <div className="dash-red-border bg-white ">
               <span className="p-2 px-4 text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] font-medium rounded-full bg-red-200">
                 Гибкость
               </span>

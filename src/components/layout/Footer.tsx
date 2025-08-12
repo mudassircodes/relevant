@@ -4,7 +4,7 @@ import { footerLinks } from "@/lib/config";
 
 export function Footer() {
   return (
-    <footer className="w-full bg-black text-white py-8 sm:py-10 px-4 sm:px-6 lg:px-10 border-t border-gray-800" role="contentinfo" aria-label="Site footer">
+    <footer className="w-full bg-black text-white py-16 sm:py-20 px-4 sm:px-6 lg:px-10  border-t border-gray-800" role="contentinfo" aria-label="Site footer">
       <div className="max-w-[1440px] mx-auto flex flex-col items-center gap-8 sm:gap-10">
         {/* Logo - Centered */}
         <div className="footer_logo hidden lg:block">
