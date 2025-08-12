@@ -21,7 +21,7 @@ export default function BannerCTA({
           rounded-[28px] md:rounded-[40px]
           bg-[#DEF0FF] 
           px-6 md:px-10 lg:px-16
-          py-10 md:py-24
+          py-20 md:py-32 lg:py-40
           text-center
       "
       >
@@ -41,7 +41,7 @@ export default function BannerCTA({
           alt="bottom wave"
           width={760}
           height={220}
-          className="  hidden md:block pointer-events-none absolute -bottom-28 -left-10 w-[560px] md:w-[760px] rotate-8"
+          className="hidden md:block pointer-events-none absolute -bottom-28 -left-10 w-[560px] md:w-[760px] rotate-8"
           aria-hidden="true"
         />
 
@@ -56,25 +56,25 @@ export default function BannerCTA({
         </h2>
 
         {/* Sub-line with red X */}
-        <div className="mt-4 flex items-center justify-center gap-2 text-sm md:text-base text-black/80">
+        <div className="mt-8 flex items-center justify-center gap-2 text-sm md:text-base text-black/80">
           <span className="text-[16px] md:text-[18px]">❌</span>
           <span>Без посредников и комиссий</span>
         </div>
 
         {/* Hearts */}
-        <div className="mt-4 text-[20px] flex justify-center items-center md:text-[24px]">
+        <div className="mt-8 text-[20px] flex justify-center items-center md:text-[24px]">
           <img src="/icons/two-heart.svg" alt="" />
         </div>
 
         {/* Cursive prompt */}
-        <div className="mt-6">
+        <div className="mt-10">
           <p className="font-caveat text-[24px] sm:text-[28px] md:text-[34px] text-black">
             Готовы попробовать?
           </p>
         </div>
 
         {/* CTA */}
-        <div className="mt-6">
+        <div className="mt-10">
           <button
             onClick={onCreateClick}
             className="inline-flex items-center justify-center

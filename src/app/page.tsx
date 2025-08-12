@@ -11,7 +11,7 @@ import SectiontThree from "@/components/sections/SectiontThree";
 
 export default function HomePage() {
   return (
-    <div className="flex justify-center flex-col">
+    <div className="flex justify-center bg-white flex-col">
       {/* home Section */}
       <Hero />
       <HeroSection />

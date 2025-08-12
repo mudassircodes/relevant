@@ -17,7 +17,7 @@ export default function Faq() {
           Вопросы и ответы
         </h2>
 
-        <div className="mt-12 xl:mt-16">
+        <div className="mt-6 md:mt-10 xl:mt-16 border-y-gray-200 border-y">
           <ul className="divide-y divide-gray-200">
             {faqs.map((item, i) => {
               const isOpen = openIndex === i;
