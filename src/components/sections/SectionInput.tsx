@@ -7,26 +7,28 @@ export default function SectionInput() {
 
   return (
     <main className="dark:bg-white">
-      <section className="px-7 font-lato dark:bg-white max-w-[1600px] 2xl:mx-auto md:px-14 mt-5 md:py-0 lg:py-28">
+      <section className="px-4 font-lato dark:bg-white max-w-[1600px] 2xl:mx-auto md:px-14  ">
         <div className="bg-[#DDF1FF] text-black rounded-2xl p-7 lg:p-20">
-          <div className="lg:max-w-3xl">
-            <h1 className="text-[28px] font-semibold leading-[34px] lg:font-bold lg:text-[48px] lg:leading-[52px]">
-              Найдите специалиста сейчас, система cпрогнозирует шанс мэтча
+          <div className="lg:max-w-3xl  md:space-y-0">
+            <h1 className="text-[28px] font-medium leading-[25px] md:leading-[34px] lg:font-bold md:text-[32px] xl:text-[48px] xl:leading-[52px]">
+              Найдите специалиста сейчас,
+              <br className="hidden md:block" /> система cпрогнозирует шанс
+              мэтча
             </h1>
-            <p className="text-[14px] leading-[20px] lg:text-[18px] mt-5 lg:leading-[26px]">
+            <p className="text-[14px] leading-[20px] xl:text-[18px] pt-3 md:pt-5 lg:leading-[26px]">
               Вы сразу увидите тех, кто уже доступен под ваш запрос
             </p>
           </div>
 
           <div>
-            <div className="flex lg:flex-row flex-col gap-3 mt-5 lg:mt-10">
+            <div className="flex lg:flex-row flex-col gap-3 mt-8 lg:mt-10">
               <input
                 type="text"
-                placeholder="Введите название специалиста или услуги"
-                className="w-full bg-white px-7 py-4 outline-none border-none rounded-full"
+                placeholder="Введите название специалиста"
+                className="w-full bg-white px-5 md:px-7 xl:w-[811px] focus:ring-2 focus:ring-[#3990FF] h-[45px] md:h-[55px] xl:h-[64px] outline-none border-none rounded-full"
               />
               <button
-                className="bg-[#3990FF] text-white rounded-full px-28 py-4"
+                className="bg-[#3990FF] text-white rounded-full w-full lg:w-[296px] h-[45px] md:h-[55px] xl:h-[64px]"
                 onClick={() => setOpen(true)}
               >
                 Найти

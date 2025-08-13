@@ -4,10 +4,10 @@ import React from "react";
 export default function SectionFive() {
   return (
     <main className="dark:bg-white">
-      <section className="px-7 dark:bg-white max-w-[1600px] 2xl:mx-auto md:px-14 mt-8 lg:py-[50px] md:py-0  lg:pb-28 ">
-        <div className="flex lg:flex-row flex-col justify-between  items-center  ">
-          <div className=" w-full lg:max-w-xl">
-            <h1 className="font-lato text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-semibold lg:font-bold leading-[34px] lg:leading-[52px] text-black">
+      <section className="px-7 dark:bg-white max-w-[1400px] 2xl:mx-auto md:px-14">
+        <div className="flex lg:flex-row flex-col justify-center  items-center  ">
+          <div className=" w-full lg:max-w-sm xl:max-w-lg">
+            <h1 className="font-lato text-[28px]  md:text-[35px] xl:text-[48px] font-semibold lg:font-bold leading-[34px] lg:leading-[52px] text-black">
               Relevants — каждый день лучше и быстрее, растёт вместе с вами
             </h1>
             <p className="font-lato mt-5 text-[16px] md:text-[18px] text-black font-normal leading-[24px] lg:leading-[26px] lg:max-w-md">
@@ -23,7 +23,7 @@ export default function SectionFive() {
             <Image
               src="/sect5png.svg"
               height={300}
-              width={700}
+              width={750}
               quality={100}
               alt="image"
             />
@@ -53,7 +53,7 @@ export default function SectionFive() {
               </p>
             </div>
 
-            <div className="dash-purple-border  bg-white">
+            <div className="border-[2.5px] transition-all rounded-3xl p-5 border-[#983098]">
               <span className="p-2 px-4 text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] font-medium rounded-full bg-purple-200">
                 Персонализация
               </span>
@@ -68,7 +68,7 @@ export default function SectionFive() {
             </div>
           </div>
           <div className="flex flex-col lg:mt-14  gap-4">
-            <div className="dash-red-border bg-white ">
+            <div className="border-[2.5px] transition-all rounded-3xl p-5 border-red-400">
               <span className="p-2 px-4 text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] font-medium rounded-full bg-red-200">
                 Гибкость
               </span>

@@ -5,18 +5,18 @@ import { iphoneData } from "@/constant/index";
 export default function SectionSix() {
   return (
     <main className="dark:bg-white ">
-      <section className="px-7 dark:bg-white max-w-[1600px] 2xl:mx-auto md:px-14 md:py-0 py-20 lg:pt-10 ">
+      <section className="px-7 dark:bg-white max-w-[1600px] 2xl:mx-auto md:px-14  ">
         <div>
-          <div className="lg:text-center text-black lg:max-w-4xl lg:mx-auto">
+          <div className="lg:text-center text-black lg:max-w-4xl lg:mx-auto flex flex-col gap-[20px] lg:gap-[32px]">
             <h1 className="font-lato text-[28px] md:text-[42px] lg:text-[48px] font-semibold  leading-[34px] lg:leading-[52px] text-black">
               Запуск мгновенно. Только по делу. Приватность под контролем{" "}
             </h1>
-            <p className="font-lato mt-5 mx-auto  text-[16px] md:text-[18px] text-black font-normal leading-[24px] lg:leading-[26px] max-w-2xl">
+            <p className="font-lato  mx-auto  text-[16px] md:text-[18px] text-black font-normal leading-[24px] lg:leading-[26px] max-w-2xl">
               Создайте вакансию меньше чем за минуту, без регистрации. Никакого
               спама и случайных контактов, только подборка подходящих профилей.
               Общение через Telegram — ваши контакты видят с вашего согласия.
             </p>
-            <div className="text-center my-5 lg:my-0 ">
+            <div className="text-center  ">
               <button className="p-3 px-6 rounded-full bg-[#3990FF] text-white mt-6">
                 Создать вакансию за 30 секунд
               </button>
