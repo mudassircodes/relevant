@@ -12,8 +12,8 @@ export default function Faq() {
 
   return (
     <section className="w-full bg-white px-4 md:px-14 ">
-      <div className="mx-auto max-w-6xl px-4 md:px-6 lg:px-8 py-14 md:py-24 xl:py-32">
-        <h2 className="text-center font-bold tracking-tight text-black text-3xl md:text-4xl xl:text-5xl">
+      <div className="mx-auto max-w-6xl px-1 md:px-6 lg:px-8">
+        <h2 className="text-center font-semibold md:font-bold tracking-tight text-black text-[28px] md:text-4xl xl:text-5xl">
           Вопросы и ответы
         </h2>
 
@@ -30,7 +30,7 @@ export default function Faq() {
                     onClick={() => toggle(i)}
                     className="flex w-full items-center justify-between gap-6 py-5 md:py-6 text-left"
                   >
-                    <span className="text-[14.5px] md:text-[20px] font-medium text-black">
+                    <span className="text-[16px] md:text-[20px] font-medium text-black">
                       {item.question}
                     </span>
 
@@ -48,7 +48,7 @@ export default function Faq() {
                       isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                     }`}
                   >
-                    <p className="pb-6 md:pb-8 text-[12px] md:text-[16px] leading-6 md:leading-7 text-gray-800">
+                    <p className="pb-6 md:pb-8 text-[16px] md:text-[16px] leading-6 md:leading-7 text-[#2F2F37]">
                       {item.answer}
                     </p>
                   </div>

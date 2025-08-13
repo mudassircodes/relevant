@@ -1,8 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-// import { ChevronLeft, ChevronRight } from "lucide-react";
-import { IoIosArrowRoundForward, IoIosArrowRoundBack  } from "react-icons/io";
-
+import { IoIosArrowRoundForward, IoIosArrowRoundBack } from "react-icons/io";
 import { clients } from "@/constant/index";
 import Image from "next/image";
 
@@ -34,10 +32,10 @@ export default function SectionSlider() {
   const nextSlide = () => setCurrentIndex((i) => Math.min(maxIndex, i + 1));
 
   return (
-    <main className="dark:bg-[#F7F7F8] bg-[#F7F7F8] py-14 mt-10 md:py-20 xl:py-28">
-      <section className="px-7 font-lato text-black max-w-[1600px] 2xl:mx-auto md:px-14 ">
+    <main className="dark:bg-[#F7F7F8] bg-[#F7F7F8] py-14 md:py-20 xl:py-28">
+      <section className="px-4 font-lato text-black max-w-[1600px] 2xl:mx-auto md:px-14">
         <div>
-          <div className="   max-w-2xl xl:max-w-3xl text-black space-y-6 xl:space-y-8 mx-auto">
+          <div className="max-w-2xl xl:max-w-3xl text-black space-y-6 xl:space-y-8 mx-auto">
             <h1 className="text-[28px] text-center leading-[34px] font-semibold md:text-[35px] xl:text-[48px] lg:font-bold lg:leading-[52px]">
               Что говорят о нас
             </h1>
@@ -51,7 +49,7 @@ export default function SectionSlider() {
         </div>
 
         <div className="py-5 md:py-14 xl:py-20">
-          <div className="overflow-x-hidden overflow-y-auto">
+          <div className="overflow-hidden relative">
             {/* Track */}
             <div
               className="flex items-start transition-transform duration-500 will-change-transform"
@@ -62,11 +60,11 @@ export default function SectionSlider() {
               {clients.map((client, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 px-2 xl:px-4"
+                  className="flex-shrink-0"
                   style={{ width: `${100 / visible}%` }}
                 >
-                  <div className="relative overflow-x-hidden overflow-y-visible pt-16">
-                    <div className="absolute left-1/2 -translate-x-1/2 top-8 md:top-4 xl:top-0 w-[65px] h-[65px]  md:w-[80px] md:h-[80px]  xl:w-[121px] xl:h-[121px] rounded-full overflow-hidden z-10">
+                  <div className="relative overflow-hidden pt-16">
+                    <div className="absolute left-1/2 -translate-x-1/2 top-8 md:top-4 xl:top-0 w-[65px] h-[65px] md:w-[80px] md:h-[80px] xl:w-[121px] xl:h-[121px] rounded-full overflow-hidden z-10">
                       <Image
                         src={client.img}
                         alt={client.name}
@@ -77,12 +75,12 @@ export default function SectionSlider() {
                       />
                     </div>
 
-                    <div className="bg-white p-4 xl:p-6 pt-12 xl:pt-20 rounded-3xl">
-                      <p className="text-gray-700 text-[12px] xl:text-lg mb-4">
+                    <div className="bg-white  p-6 xl:p-8 pt-12 xl:pt-20 rounded-3xl">
+                      <p className="text-gray-800 text-[14px] xl:text-lg mb-4">
                         {client.text}
                       </p>
 
-                      <div className="flex  text-xs xl:text-base flex-wrap gap-1 xl:gap-3  mb-4">
+                      <div className="flex text-xs xl:text-base flex-wrap gap-1 xl:gap-3 mb-4">
                         {client.tags.map((tag, idx) => (
                           <span
                             key={idx}
@@ -94,10 +92,10 @@ export default function SectionSlider() {
                       </div>
 
                       <div>
-                        <h3 className=" text-sm xl:text-lg font-semibold text-gray-800">
+                        <h3 className="text-sm xl:text-lg font-semibold text-gray-800">
                           {client.name}
                         </h3>
-                        <p className=" text-xs xl:text-sm text-gray-500">
+                        <p className="text-xs xl:text-sm text-gray-500">
                           {client.desc}
                         </p>
                       </div>
@@ -108,7 +106,7 @@ export default function SectionSlider() {
             </div>
 
             {/* Footer / Controls */}
-            <div className="mt-7 px-6 lg:mt-14 flex gap-3 justify-start lg:justify-between">
+            <div className="mt-4 md:pt-7 px-6 lg:mt-14 flex gap-3 justify-start lg:justify-between">
               <div className="hidden lg:flex" />
               <div className="relative hidden lg:flex">
                 <button className="border-2 px-4 py-3 rounded-full border-black text-black">
@@ -123,7 +121,7 @@ export default function SectionSlider() {
                 />
               </div>
 
-              <div className="flex items-center">
+              <div className="flex py-2 items-center">
                 <button
                   onClick={prevSlide}
                   disabled={!canPrev}
@@ -135,7 +133,7 @@ export default function SectionSlider() {
                   aria-disabled={!canPrev}
                   aria-label="Previous"
                 >
-                  <IoIosArrowRoundBack  size={24} />
+                  <IoIosArrowRoundBack size={24} />
                 </button>
                 <button
                   onClick={nextSlide}

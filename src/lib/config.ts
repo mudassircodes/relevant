@@ -70,3 +70,28 @@ export const footerLinks: FooterLink[] = [
     special: true,
   },
 ] 
+
+
+export const mobfooterLinks: FooterLink[] = [
+  {
+    title: "Связаться с нами",
+    href: "#home",
+    external: true,
+  },
+  {
+    title: "Условия использования Relevants",
+    href: "#home",
+    external: true,
+  },
+  {
+    title: "Политика обработки данных",
+    href: "#home",
+    external: true,
+  },
+  {
+    title: "Я исполнитель",
+    href: "#home",
+    external: true,
+    special: true,
+  },
+] 

@@ -24,16 +24,17 @@ export function Header() {
       <header className={`w-full max-w-[1600px] mx-auto px-4 md:px-14 lg:px-30 transition-all duration-300`}>
         <div className="mx-auto pt-4 lg:pt-6">
           {/* Navbar */}
-          <div className={`w-full transition-all p-3  lg:bg-white lg:shadow-xl rounded-full`}>
+          <div className={`w-full transition-all py-3 md:px-4  lg:bg-white lg:shadow-xl rounded-full`}>
             <div className="w-full rounded-full flex justify-between items-center">
               {/* Logo */}
               <Link href="#home" className="flex max-w-md items-center">
                 <Image
                   src="/relevants-logo.png"
                   alt="Relevants"
-                  width={150}
-                  height={100}
+                  width={200}
+                  height={50}
                   priority
+                  className="  w-[140px] md:w-[200px]"
                 />
               </Link>
 
@@ -78,8 +79,8 @@ export function Header() {
                   ))}
                 </div>
                 {/* Mobile Menu */}
-                <div className="lg:hidden flex flex-col justify-between h-screen px-6 py-6">
-                  <ul className="flex flex-col gap-8 mt-20">
+                <div className="lg:hidden flex flex-col justify-between  min-h-screen px-6 pt-4 pb-10">
+                  <ul className="flex flex-col gap-6 mt-20">
                     {navItems.map((item) => (
                       <li key={item.title}>
                         <Link
@@ -93,7 +94,7 @@ export function Header() {
                     ))}
                   </ul>
 
-                  <div className="flex flex-col gap-5 mt-6">
+                  <div className="flex flex-col gap-4 mt-4">
                     {actionButtons.map((button, index) => (
                       <Link
                         key={button.title}

@@ -36,10 +36,10 @@ export const Hero = () => {
           </p>
 
           <div className="hidden font-lato lg:flex gap-5">
-            <button className="text-white bg-[#3990FF] px-6 py-3 rounded-full text-[16px] lg:text-[18px] font-medium leading-[26px]">
+            <button className="text-white bg-[#3990FF] px-8 py-2.5 rounded-full text-[16px] lg:text-[18px] font-medium leading-[26px]">
               Разместить задачу
             </button>
-            <button className="text-blue-600 border-2 border-[#3990FF] px-6 py-3 rounded-full text-[16px] lg:text-[18px] leading-[26px] font-medium ">
+            <button className="text-blue-600 border-2 border-[#3990FF] px-8 py-2.5 rounded-full text-[16px] lg:text-[18px] leading-[26px] font-medium ">
               Найти исполнителя
             </button>
           </div>
@@ -53,7 +53,15 @@ export const Hero = () => {
           alt="Hero"
           width={500}
           height={400}
-          className="w-full h-auto"
+          className="w-full hidden md:block h-auto"
+          priority
+        />
+         <Image
+          src="/hero-mob.svg"
+          alt="Hero"
+          width={500}
+          height={400}
+          className="w-full md:hidden h-auto"
           priority
         />
 
