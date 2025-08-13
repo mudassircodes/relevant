@@ -17,7 +17,7 @@ const ProgressSection: React.FC<ProgressSectionProps> = ({
   imageSrc,
   data,
 }) => (
-  <div className="bg-[#F9F9FA] p-5 lg:p-8 rounded-2xl w-full max-w-3xl mx-auto">
+  <div className="bg-[#F9F9FA] p-5 lg:p-12 rounded-2xl w-full max-w-3xl mx-auto">
     <h1 className="max-md:text-[22px] lg:text-[32px] text-black text-xl font-semibold leading-[40px] mb-6">
       {title}
     </h1>
@@ -76,11 +76,11 @@ export default function SectionThree() {
         <div className="grid grid-cols-1">
           <div className="flex flex-col lg:flex-row justify-between gap-6 pt-4 md:pt-0  items-center">
             <div className="w-full md:max-w-xl lg:max-w-3xl lg:mr-10 relative">
-              <h1 className="font-lato text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold leading-[34px] lg:leading-[52px] text-black">
+              <h1 className="font-lato text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold leading-[34px] lg:leading-[48px] text-black">
                 Собрали главное о специалистах на Relevants — в цифрах
                 и диаграммах
               </h1>
-              <p className="font-lato mt-5 text-[16px] md:text-[18px] text-black font-normal leading-[28px] lg:max-w-md">
+              <p className="font-lato mt-5 text-[16px] md:text-[18px] text-black font-normal leading-[24px] lg:max-w-md">
                 Это поможет быстро понять, кого можно найти через Relevants,
                 какие направления самые активные и с кем чаще всего стоит
                 сотрудничество.
@@ -129,7 +129,7 @@ export default function SectionThree() {
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row justify-between gap-6 py-5 items-center">
+          <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-8 py-6 items-center">
             {/* Experience Section */}
             <ProgressSection
               title="По опыту"
