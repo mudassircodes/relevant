@@ -4,8 +4,8 @@ import React from "react";
 export default function SectionFive() {
   return (
     <main className="dark:bg-white">
-      <section className="px-7 dark:bg-white max-w-[1400px] 2xl:mx-auto md:px-14">
-        <div className="flex lg:flex-row flex-col justify-center  items-center  ">
+      <section className="px-4 dark:bg-white max-w-[1600px] 2xl:mx-auto md:px-14">
+        <div className="flex lg:flex-row flex-col justify-between  items-center  ">
           <div className=" w-full lg:max-w-sm xl:max-w-lg">
             <h1 className="font-lato text-[28px]  md:text-[35px] xl:text-[48px] font-semibold lg:font-bold leading-[34px] lg:leading-[52px] text-black">
               Relevants — каждый день лучше и быстрее, растёт вместе с вами
@@ -19,15 +19,24 @@ export default function SectionFive() {
               но и за рубежом.
             </p>
           </div>
-          <div className=" mt-10 hidden lg:flex  lg:mt-0">
+
+          <div className="relative mt-10 hidden lg:flex lg:mt-0">
             <Image
-              src="/sect5png.svg"
-              height={300}
-              width={750}
+              src="/hand.svg"
+              height={450}
+              width={450}
               quality={100}
               alt="image"
+              className="lg:max-w-[450px] lg:w-[300px] lg:h-[300px] xl:max-w-[450px] xl:w-[450px] xl:h-[500px] md:max-w-[400px] md:w-[400px] md:h-[400px]"
             />
+            <div className="absolute -top-4 xl:top-7 -left-20 xl:-left-24 xl:w-[380px] xl:h-[84px] transform -translate-x-1/2 sm:w-[350px] sm:h-[70px] md:w-[400px] md:h-[78px] lg:w-[320px] lg:h-[64px]">
+              <img src="/hand-card1.svg" alt="hand card" />
+            </div>
+            <div className="absolute bottom-20 xl:bottom-32 left-[40%] xl:left-[37%] transform xl:w-[400px] xl:h-[84px] -translate-x-1/2 sm:w-[350px] sm:h-[70px] md:w-[400px] md:h-[78px] lg:w-[290px] lg:h-[64px]">
+              <img src="/hand-card2.svg" alt="hand card" />
+            </div>
           </div>
+
           <div className="lg:hidden">
             <Image
               src="/sect5pngmob.png"
