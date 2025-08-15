@@ -30,7 +30,7 @@ export default function Faq() {
                     onClick={() => toggle(i)}
                     className="flex w-full items-center justify-between gap-6 py-5 md:py-6 text-left"
                   >
-                    <span className="text-[16px] md:text-[20px] font-medium text-black">
+                    <span className="text-[16px] md:text-[20px] lg:text-[24px] font-medium text-black">
                       {item.question}
                     </span>
 
@@ -44,11 +44,11 @@ export default function Faq() {
 
                   <div
                     id={`faq-panel-${i}`}
-                    className={`overflow-hidden max-w-3xl transition-[max-height,opacity] duration-300 ease-out ${
+                    className={`overflow-hidden max-w-[841px] transition-[max-height,opacity] duration-300 ease-out ${
                       isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                     }`}
                   >
-                    <p className="pb-6 md:pb-8 text-[16px] md:text-[16px] leading-6 md:leading-7 text-[#2F2F37]">
+                    <p className="pb-6 md:pb-8 text-[16px] lg:text-[18px] leading-6 md:leading-7 text-[#2F2F37]">
                       {item.answer}
                     </p>
                   </div>

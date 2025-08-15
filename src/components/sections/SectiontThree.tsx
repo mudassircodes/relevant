@@ -7,6 +7,7 @@ type ProgressSectionProps = {
   imageSrc: string;
   data: {
     label: string;
+    labels?: string;
     color: string;
     percentage: string;
   }[];
@@ -37,6 +38,7 @@ const ProgressSection: React.FC<ProgressSectionProps> = ({
             <span className="flex items-center gap-2">
               <span className={`w-3 h-3 rounded-full ${item.color}`}></span>
               {item.label}
+              {item.labels && <span>{item.labels}</span>}
             </span>
             <span>{item.percentage}</span>
           </div>
@@ -53,7 +55,8 @@ export default function SectionThree() {
     { label: "Маркетинг", color: "bg-blue-300", percentage: "24%" },
     { label: "IT Разработка", color: "bg-green-200", percentage: "19%" },
     {
-      label: "Видеомонтаж, CGIи GameDev",
+      label: "Видеомонтаж, CGI",
+      labels: "и GameDev",
       color: "bg-purple-200",
       percentage: "19%",
     },
@@ -114,13 +117,22 @@ export default function SectionThree() {
 
                 <div className="flex text-black flex-col justify-center w-full gap-3">
                   {designData.map((item, index) => (
-                    <div key={index} className="flex justify-between text-base">
+                    <div
+                      key={index}
+                      className="flex justify-between items-center text-base"
+                    >
+                      {/* Left side: dot + stacked labels */}
                       <span className="flex items-center gap-2">
                         <span
                           className={`w-3 h-3 rounded-full ${item.color}`}
-                        ></span>
-                        {item.label}
+                        />
+                        <span className="flex flex-col leading-tight">
+                          <span>{item.label}</span>
+                          {item.labels && <span>{item.labels}</span>}
+                        </span>
                       </span>
+
+                      {/* Right side: percentage */}
                       <span>{item.percentage}</span>
                     </div>
                   ))}
