@@ -79,7 +79,7 @@ export function Header() {
                   ))}
                 </div>
                 {/* Mobile Menu */}
-                <div className="lg:hidden flex flex-col justify-between  min-h-screen px-6 pt-4 pb-10">
+                <div className="lg:hidden flex flex-col justify-between  min-h-screen overflow-auto px-6 pt-4 pb-14">
                   <ul className="flex flex-col gap-6 mt-20">
                     {navItems.map((item) => (
                       <li key={item.title}>
@@ -94,7 +94,7 @@ export function Header() {
                     ))}
                   </ul>
 
-                  <div className="flex flex-col gap-4 mt-4">
+                  <div className="flex flex-col gap-4 my-4">
                     {actionButtons.map((button, index) => (
                       <Link
                         key={button.title}

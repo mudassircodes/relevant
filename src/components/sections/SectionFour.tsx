@@ -18,7 +18,7 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ label, value, color }) => (
           {label}
         </span>
       </div>
-      <span>{value}%</span>
+      <p className="w-10">{value}%</p>
     </div>
   </div>
 );

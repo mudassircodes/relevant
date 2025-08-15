@@ -39,7 +39,7 @@ export default function SectionFive() {
 
           <div className="lg:hidden">
             <Image
-              src="/sect5pngmob.png"
+              src="/hand-mob.svg"
               height={300}
               width={500}
               quality={100}

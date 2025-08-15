@@ -12,7 +12,7 @@ import SectiontThree from "@/components/sections/SectiontThree";
 export default function HomePage() {
   return (
     <>
-      <div className="flex justify-center bg-white flex-col gap-[100px] lg:gap-[180px]">
+      <div className="flex justify-center bg-white flex-col gap-[107px] lg:gap-[180px]">
         <Hero />
         <HeroSection />
         <SectiontThree />
