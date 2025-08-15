@@ -225,7 +225,7 @@ export function HeroSection() {
             </p>
 
             <div className="text-center pt-1">
-              <button className="inline-block bg-[#3990FF] text-white px-6 py-3 md:py-0 md:h-[58px] font-lato rounded-full font-light lg:font-medium text-[15px] lg:text-[17px] leading-[24px] lg:leading-[26px] hover:bg-[#0056b3] transition-colors duration-200 shadow-md hover:shadow-lg">
+              <button className="inline-block bg-[#3990FF] text-white px-6 py-3 md:py-0 md:h-[48px] font-lato rounded-full font-light lg:font-medium text-[15px] lg:text-[17px] leading-[24px] lg:leading-[26px] hover:bg-[#0056b3] transition-colors duration-200 shadow-md hover:shadow-lg">
                 Подобрать исполнителя → 30 секунд{" "}
               </button>
             </div>

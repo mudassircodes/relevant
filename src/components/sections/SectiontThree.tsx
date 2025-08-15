@@ -72,7 +72,7 @@ export default function SectionThree() {
 
   return (
     <main className="dark:bg-white">
-      <section className="px-7 dark:text-white max-w-[1600px] mx-auto md:px-14 lg:px-30">
+      <section className="px-4 dark:text-white max-w-[1600px] mx-auto md:px-14 lg:px-30">
         <div className="grid grid-cols-1">
           <div className="flex flex-col lg:flex-row justify-between gap-6 pt-4 md:pt-0  items-center">
             <div className="w-full md:max-w-xl lg:max-w-3xl lg:mr-10 relative">

@@ -20,7 +20,7 @@ export default function BannerCTA({
           mx-auto w-full
           rounded-[28px] md:rounded-[40px]
           bg-[#DEF0FF] 
-          px-6 md:px-10 lg:px-16
+          px-4 md:px-10 lg:px-16
           py-16 md:py-32 lg:py-40
           text-center
       "

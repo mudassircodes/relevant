@@ -5,7 +5,7 @@ import { iphoneData } from "@/constant/index";
 export default function SectionSix() {
   return (
     <main className="dark:bg-white ">
-      <section className="px-7 dark:bg-white max-w-[1600px] 2xl:mx-auto md:px-14  ">
+      <section className="px-4 dark:bg-white max-w-[1600px] 2xl:mx-auto md:px-14  ">
         <div>
           <div className="lg:text-center text-black lg:max-w-4xl lg:mx-auto flex flex-col gap-[20px] lg:gap-[32px]">
             <h1 className="font-lato text-[28px] md:text-[42px] lg:text-[48px] font-semibold  leading-[34px] lg:leading-[52px] text-black">
