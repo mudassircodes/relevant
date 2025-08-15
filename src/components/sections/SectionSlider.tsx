@@ -34,6 +34,7 @@ export default function SectionSlider() {
   const canPrev = currentIndex > 0;
   const canNext = currentIndex < maxIndex;
 
+  const SLIDE_SIDE_PADDING_PX = 12;
   const prevSlide = () => setCurrentIndex((i) => Math.max(0, i - 1));
   const nextSlide = () => setCurrentIndex((i) => Math.min(maxIndex, i + 1));
 
@@ -58,60 +59,62 @@ export default function SectionSlider() {
         {/* Slider */}
         <div className="py-5 md:py-14 xl:py-20">
           <div className="overflow-hidden relative">
-            {/* Track: no gap; translate is exact */}
-            <div
-              className="flex transition-transform duration-500 will-change-transform"
-              style={{
-                transform: `translateX(-${(currentIndex * 100) / visible}%)`,
-              }}
-            >
-              {clients.map((client, index) => (
-                <div
-                  key={index}
-                  className="shrink-0 basis-full sm:basis-1/2 lg:basis-1/4 px-1 xl:px-2"
-                  style={{ width: `${100 / visible}%` }}
-                >
-                  {/* Card: natural height (no h-full) */}
-                  <div className="relative overflow-hidden pt-16">
-                    <div className="absolute left-1/2 -translate-x-1/2 top-8 md:top-4 xl:top-0 w-[65px] h-[65px] md:w-[80px] md:h-[80px] xl:w-[121px] xl:h-[121px] rounded-full overflow-hidden z-10">
-                      <Image
-                        src={client.img}
-                        alt={client.name}
-                        width={121}
-                        height={121}
-                        className="object-cover w-full h-full rounded-full"
-                        priority
-                      />
-                    </div>
-
-                    <div className="bg-white p-6 xl:p-8 pt-12 xl:pt-20 rounded-3xl">
-                      <p className="text-gray-800 text-[14px] xl:text-lg mb-4">
-                        {client.text}
-                      </p>
-
-                      <div className="flex text-xs xl:text-base flex-wrap gap-1 xl:gap-3 mb-4">
-                        {client.tags.map((tag, idx) => (
-                          <span
-                            key={idx}
-                            className="text-gray-800 leading-[20px]"
-                          >
-                            {tag}
-                          </span>
-                        ))}
+            <div className="mx-[-12px]">
+              {/* Track: NO gap */}
+              <div
+                className="flex transition-transform duration-500 will-change-transform"
+                style={{
+                  transform: `translateX(-${(currentIndex * 100) / visible}%)`,
+                }}
+              >
+                {clients.map((client, index) => (
+                  <div
+                    key={index}
+                    className="shrink-0 basis-full sm:basis-1/2 lg:basis-1/4 px-3"
+                    style={{ width: `${100 / visible}%` }}
+                  >
+                    {/* Card with natural height */}
+                    <div className="relative overflow-hidden pt-16">
+                      <div className="absolute left-1/2 -translate-x-1/2 top-8 md:top-4 xl:top-0 w-[65px] h-[65px] md:w-[80px] md:h-[80px] xl:w-[121px] xl:h-[121px] rounded-full overflow-hidden z-10">
+                        <Image
+                          src={client.img}
+                          alt={client.name}
+                          width={121}
+                          height={121}
+                          className="object-cover w-full h-full rounded-full"
+                          priority
+                        />
                       </div>
 
-                      <div>
-                        <h3 className="text-sm xl:text-lg font-semibold text-gray-800">
-                          {client.name}
-                        </h3>
-                        <p className="text-xs xl:text-sm text-gray-500">
-                          {client.desc}
+                      <div className="bg-white p-6 xl:p-8 pt-12 xl:pt-20 rounded-3xl">
+                        <p className="text-gray-800 text-[14px] lg:text-[16px] mb-4">
+                          {client.text}
                         </p>
+
+                        <div className="flex text-xs xl:text-base flex-wrap gap-1 xl:gap-3 mb-4">
+                          {client.tags.map((tag, idx) => (
+                            <span
+                              key={idx}
+                              className="text-gray-800 leading-[20px]"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+
+                        <div>
+                          <h3 className="text-sm xl:text-lg font-semibold text-gray-800">
+                            {client.name}
+                          </h3>
+                          <p className="text-xs lg:text-sm text-gray-500">
+                            {client.desc}
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
 
             {/* Controls */}
