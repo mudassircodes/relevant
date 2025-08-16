@@ -4,7 +4,7 @@ import { iphoneData } from "@/constant/index";
 
 export default function SectionSix() {
   return (
-    <main className="dark:bg-white ">
+    <main id="Инструкция" className="dark:bg-white ">
       <section className="px-4 dark:bg-white max-w-[1600px] 2xl:mx-auto md:px-14  ">
         <div>
           <div className="lg:text-center text-black lg:max-w-4xl lg:mx-auto flex flex-col gap-[20px] lg:gap-[32px]">
@@ -32,12 +32,12 @@ export default function SectionSix() {
                     {item.head}
                   </h1>
 
-                  <div className="bg-[#F7F7F7] rounded-3xl px-10 pt-5">
-                    <div className="w-64 space-y-4 mb-5 mx-auto">
-                      <h1 className="text-[20px] leading-[28px] lg:text-[24px] lg:leading-[32px] font-semibold font-lato">
+                  <div className="bg-[#F7F7F7] rounded-3xl px-6 pt-5">
+                    <div className="space-y-4 mb-5 mx-auto text-center">
+                      <h1 className="text-[20px] max-w-[21rem] leading-[28px] lg:text-[24px] lg:leading-[32px] font-semibold font-lato mx-auto">
                         {item.title}
                       </h1>
-                      <p className="font-light text-[14px] leading-[20px] lg:text-[16px] lg:leading-[24px]">
+                      <p className="font-light max-w-96 text-[14px] leading-[20px] lg:text-[16px] lg:leading-[24px] mx-auto">
                         {item.para}
                       </p>
                     </div>
@@ -60,7 +60,7 @@ export default function SectionSix() {
                           width={90}
                           height={90}
                           alt="icon"
-                          className="absolute  xl:w-24 xl:h-24 w-16 h-16  z-20  bottom-5 -right-7 xl:bottom-10 xl:-right-10"
+                          className="absolute xl:w-24 xl:h-24 w-16 h-16 z-20 bottom-5 -right-7 xl:bottom-10 xl:-right-10"
                         />
                       )}
                     </div>

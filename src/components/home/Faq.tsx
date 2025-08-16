@@ -11,7 +11,7 @@ export default function Faq() {
   };
 
   return (
-    <section className="w-full bg-white px-4 md:px-14 ">
+    <section id="Вопросы и ответы" className="w-full bg-white px-4 md:px-14 ">
       <div className="mx-auto max-w-6xl px-1 md:px-6 lg:px-8">
         <h2 className="text-center font-semibold md:font-bold tracking-tight text-black text-[28px] md:text-4xl xl:text-5xl">
           Вопросы и ответы

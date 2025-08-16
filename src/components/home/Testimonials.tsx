@@ -26,7 +26,7 @@ export default function SectionSlider() {
 
   const maxIndex = Math.max(0, clients.length - visible);
 
-  // keep index valid when visible changes
+  // Keep index valid when visible changes
   useEffect(() => {
     setCurrentIndex((i) => Math.min(i, maxIndex));
   }, [visible, maxIndex]);
@@ -39,7 +39,10 @@ export default function SectionSlider() {
   const nextSlide = () => setCurrentIndex((i) => Math.min(maxIndex, i + 1));
 
   return (
-    <main className="dark:bg-[#F7F7F8] bg-[#F7F7F8] py-14 md:py-20 xl:py-28">
+    <main
+      id="Отзывы"
+      className="dark:bg-[#F7F7F8] bg-[#F7F7F8] py-14 md:py-20 xl:py-28"
+    >
       <section className="px-4 font-lato text-black max-w-[1600px] 2xl:mx-auto md:px-14">
         {/* Heading */}
         <div>
@@ -60,7 +63,6 @@ export default function SectionSlider() {
         <div className="py-5 md:py-14 xl:py-20">
           <div className="overflow-hidden relative">
             <div className="mx-[-12px]">
-              {/* Track: NO gap */}
               <div
                 className="flex transition-transform duration-500 will-change-transform"
                 style={{
@@ -73,7 +75,6 @@ export default function SectionSlider() {
                     className="shrink-0 basis-full sm:basis-1/2 lg:basis-1/4 px-3"
                     style={{ width: `${100 / visible}%` }}
                   >
-                    {/* Card with natural height */}
                     <div className="relative overflow-hidden pt-16">
                       <div className="absolute left-1/2 -translate-x-1/2 top-8 md:top-4 xl:top-0 w-[65px] h-[65px] md:w-[80px] md:h-[80px] xl:w-[121px] xl:h-[121px] rounded-full overflow-hidden z-10">
                         <Image

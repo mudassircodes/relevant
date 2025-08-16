@@ -1,13 +1,13 @@
-import { Hero } from "@/components/Hero";
-import BannerCTA from "@/components/sections/BannerCTA";
-import Faq from "@/components/sections/Faq";
-import { HeroSection } from "@/components/sections/TeamSection";
-import SectionFive from "@/components/sections/SectionFive";
-import SectionFour from "@/components/sections/SectionFour";
-import SectionInput from "@/components/sections/SectionInput";
-import SectionSix from "@/components/sections/SectionSix";
-import SectionSlider from "@/components/sections/SectionSlider";
-import SectiontThree from "@/components/sections/SectiontThree";
+import { Hero } from "@/components/home/Hero";
+import BannerCTA from "@/components/home/BannerCTA";
+import Faq from "@/components/home/Faq";
+import { HeroSection } from "@/components/home/TeamSection";
+import SectionFive from "@/components/home/Преимущества ";
+import SectionFour from "@/components/home/SectionFour";
+import SectionInput from "@/components/home/InputBanner";
+import SectionSix from "@/components/home/Инструкция";
+import SectionSlider from "@/components/home/Testimonials";
+import SectiontThree from "@/components/home/Relevants в цифрах";
 
 export default function HomePage() {
   return (

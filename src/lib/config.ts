@@ -1,4 +1,4 @@
-import { SiteConfig, NavItem, ActionButton, FooterLink } from "@/types"
+import { SiteConfig, NavItem, ActionButton, FooterLink } from "@/types";
 
 export const siteConfig: SiteConfig = {
   name: "Relevants",
@@ -9,89 +9,88 @@ export const siteConfig: SiteConfig = {
     twitter: "https://twitter.com/relevants",
     github: "https://github.com/relevants",
   },
-}
+};
 
 export const navItems: NavItem[] = [
   {
     title: "Relevants в цифрах",
-    href: "#home",
-  },
-  {
-    title: "Инструкция",
-    href: "#home",
+    href: "#Relevants в цифрах",
   },
   {
     title: "Преимущества",
-    href: "#home",
+    href: "#Преимущества",
+  },
+  {
+    title: "Инструкция",
+    href: "#Инструкция",
   },
   {
     title: "Отзывы",
-    href: "#home",
+    href: "#Отзывы",
   },
   {
     title: "Вопросы и ответы",
-    href: "#home",
+    href: "#Вопросы и ответы",
   },
-]
+];
 
 export const actionButtons: ActionButton[] = [
   {
     title: "Я нанимаю",
-    href: "#home",
+    href: "https://relevants.space/for-freelancers",
     external: true,
   },
   {
     title: "Я ищу проект",
-    href: "#home",
+    href: "https://relevants.space/for-freelancers",
     external: true,
   },
-]
+];
 
 export const footerLinks: FooterLink[] = [
   {
     title: "Условия использования Relevants",
-    href: "#home",
+    href: "https://www.relevants.space/tos.docx",
     external: true,
   },
   {
     title: "Политика обработки данных",
-    href: "#home",
+    href: "https://www.relevants.space/pd.docx",
     external: true,
   },
   {
     title: "Связаться с нами",
-    href: "#home",
+    href: "https://t.me/rele_support",
     external: true,
   },
   {
     title: "Я исполнитель",
-    href: "#home",
+    href: "https://relevants.space/for-freelancers",
     external: true,
     special: true,
   },
-] 
-
+];
 
 export const mobfooterLinks: FooterLink[] = [
   {
     title: "Связаться с нами",
-    href: "#home",
+    href: "https://t.me/rele_support",
     external: true,
   },
   {
     title: "Условия использования Relevants",
-    href: "#home",
+    href: "https://www.relevants.space/tos.docx",
     external: true,
   },
   {
     title: "Политика обработки данных",
-    href: "#home",
+    href: "https://www.relevants.space/pd.docx",
     external: true,
   },
   {
     title: "Я исполнитель",
-    href: "#home",
+    href: "https://relevants.space/for-freelancers",
     external: true,
     special: true,
   },
-] 
+];

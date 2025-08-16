@@ -13,8 +13,8 @@ export function Footer() {
         {/* Logo - Centered */}
         <div className="footer_logo hidden lg:block">
           <Link
-            href="#home"
-            className="flex items-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black rounded-lg p-1"
+            href="/"
+            className="flex items-center focus:outline-none  "
             aria-label="Go to homepage"
             tabIndex={0}
           >
@@ -37,7 +37,7 @@ export function Footer() {
             <div className="footer_logo">
               <Link
                 href="#home"
-                className="flex items-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black rounded-lg "
+                className="flex items-center focus:outline-none  "
                 aria-label="Go to homepage"
                 tabIndex={0}
               >
@@ -54,7 +54,7 @@ export function Footer() {
 
             {/* Mobile Button */}
             <Link
-              href="#home"
+              href="https://relevants.space/for-freelancers"
               rel="noopener noreferrer"
               className="text-white border border-white px-4 py-1.5 md:py-2 rounded-full transition-all duration-200  text-xs sm:text-sm"
               aria-label="Join as a specialist on Telegram"
@@ -120,8 +120,8 @@ export function Footer() {
                   rel={link.external ? "noopener noreferrer" : undefined}
                   className={`${
                     link.special
-                      ? "border border-white-400 px-4 py-2 rounded-full text-white focus:outline-none focus:ring-2 focus:ring-offset-2"
-                      : "text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black rounded px-1 py-0.5"
+                      ? "border border-white-400 px-4 py-2 rounded-full text-white "
+                      : "text-gray-300 hover:text-white focus:outline-none "
                   }`}
                   aria-label={`${link.title}${
                     link.download ? " - Download document" : ""

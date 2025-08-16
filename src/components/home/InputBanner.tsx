@@ -88,7 +88,7 @@ function BlurModal({ onClose }: ModalProps) {
       <img
         src="/relevants-logo.png"
         alt="Logo"
-        className="absolute top-6 left-6 w-16 h-fit md:w-20  lg:w-28  xl:w-32  object-contain z-60"
+        className="absolute top-6 left-6 w-36 h-fit md:w-20  lg:w-28  xl:w-32  object-contain z-60"
       />
 
       {/* Close button (top-right) */}
@@ -97,7 +97,7 @@ function BlurModal({ onClose }: ModalProps) {
         onClick={onClose}
         className="
           absolute top-6 right-6
-          w-10 h-10 rounded-full
+           w-8 h-8 lg:w-10 lg:h-10 rounded-full
           border border-black/80
           hover:bg-black
           hover:text-white

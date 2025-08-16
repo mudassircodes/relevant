@@ -3,7 +3,7 @@ import React from "react";
 
 export default function SectionFive() {
   return (
-    <main className="dark:bg-white">
+    <main id="Преимущества" className="dark:bg-white">
       <section className="px-4 dark:bg-white max-w-[1600px] 2xl:mx-auto md:px-14">
         <div className="flex lg:flex-row flex-col justify-between  items-center  ">
           <div className=" w-full lg:max-w-sm xl:max-w-lg">
@@ -49,12 +49,12 @@ export default function SectionFive() {
           </div>
         </div>
 
-        <div className="grid text-black  grid-cols-1 py-10 lg:grid-cols-2 gap-5 ">
+        <div className="grid text-black  grid-cols-1 pt-10 md:pt-0 lg:py-10 lg:grid-cols-2 gap-5 ">
           <div className="flex flex-col gap-4">
             <div className="border-[2.5px] transition-all rounded-3xl p-5 border-blue-400">
-              <span className="p-2 px-4 text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] font-medium rounded-full bg-blue-200">
+              <h3 className="p-2 px-4 text-[16px] w-fit lg:text-[18px] leading-[24px] lg:leading-[26px] font-medium rounded-full bg-blue-200">
                 Наглядная статистика
-              </span>
+              </h3>
               <p className="mt-6 text-[16px] leading-[24px] ">
                 Мы сделали статистику просмотров вашего профиля — все наглядно
                 на любом отрезке времени. И покажем реальные ставки специалистов
@@ -63,9 +63,9 @@ export default function SectionFive() {
             </div>
 
             <div className="border-[2.5px] transition-all rounded-3xl p-5 border-[#983098]">
-              <span className="p-2 px-4 text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] font-medium rounded-full bg-purple-200">
+              <h3 className="p-2 px-4 w-fit text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] font-medium rounded-full bg-purple-200">
                 Персонализация
-              </span>
+              </h3>
               <p className="mt-6 text-[16px] leading-[24px]">
                 Искусственный интеллект все время обучается и с каждым Вашем
                 мэтчем, побираются все более и более релевантные Профили
@@ -78,9 +78,9 @@ export default function SectionFive() {
           </div>
           <div className="flex flex-col lg:mt-14  gap-4">
             <div className="border-[2.5px] transition-all rounded-3xl p-5 border-red-400">
-              <span className="p-2 px-4 text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] font-medium rounded-full bg-red-200">
+              <h3 className="p-2 w-fit px-4 text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px] font-medium rounded-full bg-red-200">
                 Гибкость
-              </span>
+              </h3>
               <p className="mt-6 text-[16px] leading-[24px]">
                 Выбирайте себе специалиста в долгосрочное сотрудничество
                 или на короткий проект по определённому скиллу, по доходу,
@@ -90,9 +90,9 @@ export default function SectionFive() {
             </div>
 
             <div className="border-[2.5px] transition-all rounded-3xl p-5 border-green-400">
-              <span className="p-2 px-4s text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px]font-medium rounded-full bg-green-200">
+              <h3 className="p-2 px-4 w-fit text-[16px] lg:text-[18px] leading-[24px] lg:leading-[26px]font-medium rounded-full bg-green-200">
                 Безопасная среда
-              </span>
+              </h3>
               <p className="mt-6 text-[16px] leading-[24px]">
                 Наш искусственный интеллект проверяет при создании контента
                 каждый шаг и блокирует заведомо подозрительные и фейковые

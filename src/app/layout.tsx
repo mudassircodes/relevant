@@ -18,6 +18,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: { default: siteConfig.name, template: `%s - ${siteConfig.name}` },
   description: siteConfig.description,
+  icons: {
+    icon: "/favicon.ico", 
+  },
   keywords: [
     "Next.js",
     "React",
@@ -75,7 +78,7 @@ const lato = Lato({
 
 const caveat = Caveat({
   subsets: ["latin"],
-  weight: ["400", "700"], 
+  weight: ["400", "700"],
   variable: "--font-caveat",
 });
 
@@ -95,7 +98,9 @@ export default function RootLayout({
         />
       </head>
       {/* `antialiased min-h-screen bg-background font-sans` */}
-      <body className={`${lato.className} antialiased min-h-screen bg-background`}>
+      <body
+        className={`${lato.className} antialiased min-h-screen bg-background`}
+      >
         <div className="relative flex flex-col">
           <Header />
           <main className="flex-1">{children}</main>

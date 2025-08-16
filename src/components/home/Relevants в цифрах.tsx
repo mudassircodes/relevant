@@ -52,13 +52,13 @@ export default function SectionThree() {
   // Data for the three sections
   const designData = [
     { label: "Дизайн", color: "bg-black", percentage: "49%" },
-    { label: "Маркетинг", color: "bg-blue-300", percentage: "24%" },
+    { label: "Маркетинг", color: "bg-blue-300", percentage: "25%" },
     { label: "IT Разработка", color: "bg-green-200", percentage: "19%" },
     {
       label: "Видеомонтаж, CGI",
       labels: "и GameDev",
       color: "bg-purple-200",
-      percentage: "19%",
+      percentage: "7%",
     },
   ];
 
@@ -74,7 +74,7 @@ export default function SectionThree() {
   ];
 
   return (
-    <main className="dark:bg-white">
+    <main id="Relevants в цифрах" className="  dark:bg-white">
       <section className="px-4 dark:text-white max-w-[1600px] mx-auto md:px-14 lg:px-30">
         <div className="grid grid-cols-1">
           <div className="flex flex-col lg:flex-row justify-between gap-6 pt-4 md:pt-0  items-center">

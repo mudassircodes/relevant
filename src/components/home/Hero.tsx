@@ -4,7 +4,7 @@ import React from "react";
 
 export const Hero = () => {
   return (
-    <main className="dark:bg-white">
+    <main id="home" className="dark:bg-white">
       <section className="bg-[#ddf1ff] rounded-b-[60px] ">
         <div className="flex flex-col lg:flex-row justify-between items-center w-full xl:max-w-[1600px] mx-auto md:px-14 lg:px-30 overflow-hidden rounded-b-[60px] pt-32 py-10 gap-12 px-4">
           {/* Left */}
@@ -37,9 +37,11 @@ export const Hero = () => {
                 <button className="text-white bg-[#3990FF] px-8 py-2.5 lg:py-0 md:h-[48px] rounded-full text-[16px] lg:text-[18px] font-medium leading-[26px]">
                   Разместить задачу
                 </button>
-                <button className="text-blue-600 border-2 border-[#3990FF] px-8 py-2.5 lg:py-0 md:h-[48px] rounded-full text-[16px] lg:text-[18px] leading-[26px] font-medium ">
-                  Найти исполнителя
-                </button>
+                <Link href="https://relevants.space/for-freelancers">
+                  <button className="text-blue-600 border-2 border-[#3990FF] px-8 py-2.5 lg:py-0 md:h-[48px] rounded-full text-[16px] lg:text-[18px] leading-[26px] font-medium ">
+                    Найти исполнителя
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -70,12 +72,12 @@ export const Hero = () => {
               >
                 Разместить задачу
               </Link>
-              <Link
-                href="#"
+              <a
+                href="https://relevants.space/for-freelancers"
                 className="text-blue-600 border-2 border-[#3990FF] py-3 px-4 rounded-full text-sm font-medium text-center"
               >
                 Найти исполнителя
-              </Link>
+              </a>
             </div>
           </div>
         </div>

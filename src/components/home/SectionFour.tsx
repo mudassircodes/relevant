@@ -61,7 +61,7 @@ export default function SectionFour() {
     <main className="dark:bg-white">
       <section className="px-4  dark:bg-white max-w-[1600px] 2xl:mx-auto md:px-14 ">
         <div className="flex flex-col">
-          <div className="font-lato text-black lg:text-center lg:max-w-3xl mx-auto lg:mb-5 mt-8 lg:mt-0 space-y-4">
+          <div className="font-lato text-black lg:text-center lg:max-w-3xl mx-auto lg:mb-5  space-y-4">
             <h1 className="text-[28px] lg:text-[48px] font-semibold leading-[34px] lg:leading-[52px]">
               Посмотрите, на какие задачи уже нанимают специалистов
             </h1>
