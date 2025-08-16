@@ -57,11 +57,12 @@ export const Hero = () => {
               priority
             />
             <Image
-              src="/hero-mob.svg"
+              src="/layer.png"
               alt="Hero"
               width={500}
               height={400}
               className="w-full md:hidden h-auto"
+              loading="lazy"
               priority
             />
 
