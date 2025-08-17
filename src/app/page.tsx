@@ -2,12 +2,12 @@ import { Hero } from "@/components/home/Hero";
 import BannerCTA from "@/components/home/BannerCTA";
 import Faq from "@/components/home/Faq";
 import { HeroSection } from "@/components/home/TeamSection";
-import SectionFive from "@/components/home/Преимущества ";
+import SectionFive from "@/components/home/Advantages";
 import SectionFour from "@/components/home/SectionFour";
 import SectionInput from "@/components/home/InputBanner";
-import SectionSix from "@/components/home/Инструкция";
+import SectionSix from "@/components/home/Instructions";
 import SectionSlider from "@/components/home/Testimonials";
-import SectiontThree from "@/components/home/Relevants в цифрах";
+import SectiontThree from "@/components/home/Charts";
 
 export default function HomePage() {
   return (

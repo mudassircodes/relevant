@@ -142,7 +142,7 @@ function BlurModal({ onClose }: ModalProps) {
               rounded-full px-5 sm:px-6 md:px-7 py-3
               bg-[#3990FF] text-white
               text-sm md:text-base
-              shadow-sm hover:opacity-90 transition w-[213.33px]
+              shadow-sm hover:opacity-90 transition ButtonWidth
             "
             onClick={onClose}
           >
