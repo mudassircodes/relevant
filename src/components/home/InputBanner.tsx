@@ -121,7 +121,7 @@ function BlurModal({ onClose }: ModalProps) {
         >
           В вашей категории доступно
           <br className="hidden sm:block" />
-          ещё <span className="whitespace-nowrap">87 специалистов</span>
+           &nbsp;ещё <span className="whitespace-nowrap">87 специалистов</span>
         </h3>
 
         <div className="mt-8 flex flex-col md:flex-row items-center justify-center gap-3">
@@ -142,7 +142,7 @@ function BlurModal({ onClose }: ModalProps) {
               rounded-full px-5 sm:px-6 md:px-7 py-3
               bg-[#3990FF] text-white
               text-sm md:text-base
-              shadow-sm hover:opacity-90 transition w-[214px]
+              shadow-sm hover:opacity-90 transition w-[213.33px]
             "
             onClick={onClose}
           >
