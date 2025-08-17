@@ -17,7 +17,7 @@ export default function SectionSix() {
               Общение через Telegram — ваши контакты видят с вашего согласия.
             </p>
             <div className="text-center  ">
-              <button className="h-[58px] px-6 rounded-full bg-[#3990FF] text-white ">
+              <button className="lg:h-[58px] max-lg:h-[48px] px-6 rounded-full bg-[#3990FF] text-white ">
                 Создать вакансию за 30 секунд
               </button>
             </div>
