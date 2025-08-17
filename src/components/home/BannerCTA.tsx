@@ -78,6 +78,7 @@ export default function BannerCTA({
           <button
             onClick={onCreateClick}
             className="inline-flex items-center justify-center
+            lg:h-[58px] max-lg:h-[52px]
                        rounded-full bg-[#3990FF] text-white
                        px-6  w-full md:w-fit md:px-10 py-3
                        text-sm  md:text-[16px]
