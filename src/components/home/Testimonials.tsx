@@ -60,7 +60,7 @@ export default function SectionSlider() {
         </div>
 
         {/* Slider */}
-        <div className="py-5 md:py-14 xl:py-20">
+        <div className="pt-5 md:pt-14 xl:pt-20">
           <div className="overflow-hidden relative">
             <div className="mx-[-12px]">
               <div

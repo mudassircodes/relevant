@@ -57,13 +57,13 @@ export const Hero = () => {
               priority
             />
             <Image
-              src="/layer.png"
+              src="/bg.png"
               alt="Hero"
               width={500}
               height={400}
               className="w-full md:hidden h-auto"
               loading="lazy"
-              priority
+              // priority
             />
 
             <div className="flex lg:hidden mt-16 px-16 justify-center flex-col gap-4">
